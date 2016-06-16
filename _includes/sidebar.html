@@ -1,0 +1,68 @@
+<section id="sidebar">
+
+	<!-- Intro -->
+		<section id="intro">
+			<a href="#" class="logo"><img src="/images/logo.jpg" alt="" /></a>
+			<header>
+				<h2>Huge Manatee</h2>
+				<p>{{ site.description }}</p>
+			</header>
+		</section>
+
+	<!-- About -->
+		<section class="blurb">
+			<h2>About</h2>
+			<p>{{ site.blurb }} </p>
+			<ul class="actions">
+				<li><a href="./about.html" class="button">Learn More</a></li>
+			</ul>
+		</section>
+
+	<!-- Mini Posts -->
+		<section>
+			<div class="mini-posts">
+
+				<!-- Mini Post -->
+					<article class="mini-post">
+						<header>
+							<h3><a href="#">Hello World.</a></h3>
+							<time class="published" datetime="2016-06-14">June 14, 2016</time>
+							<a href="#" class="author"><img src="/images/avatar.jpg" alt="" /></a>
+						</header>
+						<a href="#" class="image"><img src="/images/pic04.jpg" alt="" /></a>
+					</article>
+			</div>
+		</section> 
+
+
+	<!-- Posts List -->
+		{% for post in site.posts %}
+ 		<section>
+			<ul class="posts">
+				<li>
+					<article>
+						<header>
+							<h3><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h3>
+							<time class="published" datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%b %-d, %Y" }}</time>
+						</header>
+						<a href="#" class="image"><img src="/images/pic08.jpg" alt="" /></a>
+					</article>
+				</li>
+			</ul>
+		</section>
+		{% endfor %}
+	
+
+	<!-- Footer -->
+		<section id="footer">
+			<ul class="icons">
+				<li><a href="#" class="fa-twitter"><span class="label">Twitter</span></a></li>
+				<li><a href="#" class="fa-facebook"><span class="label">Facebook</span></a></li>
+				<li><a href="#" class="fa-instagram"><span class="label">Instagram</span></a></li>
+				<li><a href="#" class="fa-rss"><span class="label">RSS</span></a></li>
+				<li><a href="#" class="fa-envelope"><span class="label">Email</span></a></li>
+			</ul>
+			<p class="copyright">&copy; Frank Yang. Design: <a href="http://html5up.net">HTML5 UP</a>. Images: <a href="http://unsplash.com">Unsplash</a>.</p>
+		</section>
+
+</section>
