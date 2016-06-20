@@ -22,7 +22,7 @@ layout: default
     
     <footer> 
       <ul class="actions">
-        <li><a href="{{ post.url | prepend: site.baseurl }}" class="button big">Continue Reading</a></li>
+        <li><a href="{{ post.url | prepend: site.baseurl | prepend: site.url }}" class="button big">Continue Reading</a></li>
       </ul>
       <ul class="stats">
         <li><a href="#">{{ post.categories }}</a></li>

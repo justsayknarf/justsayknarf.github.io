@@ -16,7 +16,7 @@ blurb: >
 baseurl: "/" # the subpath of your site, e.g. /blog
 assetsurl: "/assets"
 imagesurl: "/images"
-url: "http://localhost:4000" # the base hostname & protocol for your site
+url: "http://justsayknarf.github.com" # the base hostname & protocol for your site
 twitter_username: 
 github_username:  
 
