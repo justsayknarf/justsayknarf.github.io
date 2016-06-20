@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Hang Drummer</title>
+	<script type="text/javascript" src="js/lib/paper-full.js"></script>
+	<script type="text/javascript" src="js/lib/howler.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/circles.css">
+	<script type="text/paperscript" canvas="myCanvas">
+var quadxPoint = view.size.width/3;
+var quadyPoint = view.size.height/3;
+
+
+var keyData = {
+	space: {
+		color: "black",
+		shift: new Point(0,0),
+		sound: new Howl({
+				urls: ['sounds/Crop/hang1-a.wav']
+		})
+	},
+	q: {
+		color: "purple",
+		shift: new Point(0,0),
+		sound: new Howl({
+				urls: ['sounds/Crop/hang7-csharp.wav']
+		})
+	},
+	w: {
+		color: "purple",
+		shift: new Point(0,0),
+		sound: new Howl({
+				urls: ['sounds/Crop/hang7-csharp.wav']
+		})
+	},
+	e: {
+		color: "purple",
+		shift: new Point(0,0),
+		sound: new Howl({
+				urls: ['sounds/Crop/hang7-csharp.wav']
+		})
+	},
+	a: {
+		color: "green",
+		shift: new Point(0,quadyPoint),
+		sound: new Howl({
+				urls: ['sounds/Crop/hang5-g.wav']
+		})
+	},
+	s: {
+		color: "green",
+		shift: new Point(0,quadyPoint),
+		sound: new Howl({
+				urls: ['sounds/Crop/hang5-g.wav']
+		})
+	},
+	d: {
+		color: "green",
+		shift: new Point(0,quadyPoint),
+		sound: new Howl({
+				urls: ['sounds/Crop/hang5-g.wav']
+		})
+	},
+	z: {
+		color: "yellow",
+		shift: new Point(0,quadyPoint * 2),
+		sound: new Howl({
+				urls: ['sounds/Crop/hang3-dsharp.wav']
+		})
+	},
+	x: {
+		color: "yellow",
+		shift: new Point(0,quadyPoint * 2),
+		sound: new Howl({
+				urls: ['sounds/Crop/hang3-dsharp.wav']
+		})
+	},
+	c: {
+		color: "yellow",
+		shift: new Point(0,quadyPoint * 2),
+		sound: new Howl({
+				urls: ['sounds/Crop/hang3-dsharp.wav']
+		})
+	},
+	b: {
+		color: "yellow",
+		shift: new Point(quadxPoint * 2,quadyPoint * 2),
+		sound: new Howl({
+				urls: ['sounds/Crop/hang2-d.wav']
+		})
+	},
+	n: {
+		color: "yellow",
+		shift: new Point(quadxPoint * 2,quadyPoint * 2),
+		sound: new Howl({
+				urls: ['sounds/Crop/hang2-d.wav']
+		})
+	},
+	m: {
+		color: "yellow",
+		shift: new Point(quadxPoint * 2,quadyPoint * 2),
+		sound: new Howl({
+				urls: ['sounds/Crop/hang2-d.wav']
+		})
+	},
+	j: {
+		color: "yellow",
+		shift: new Point(quadxPoint * 2,quadyPoint),
+		sound: new Howl({
+				urls: ['sounds/Crop/hang4-fsharp.wav']
+		})
+	},
+	k: {
+		color: "yellow",
+		shift: new Point(quadxPoint * 2,quadyPoint),
+		sound: new Howl({
+				urls: ['sounds/Crop/hang4-fsharp.wav']
+		})
+	},
+	l: {
+		color: "yellow",
+		shift: new Point(quadxPoint * 2,quadyPoint),
+		sound: new Howl({
+				urls: ['sounds/Crop/hang4-fsharp.wav']
+		})
+	},
+	i: {
+		color: "yellow",
+		shift: new Point(quadxPoint * 2, 0),
+		sound: new Howl({
+				urls: ['sounds/Crop/hang6-asharp.wav']
+		})
+	},
+	o: {
+		color: "yellow",
+		shift: new Point(quadxPoint * 2, 0),
+		sound: new Howl({
+				urls: ['sounds/Crop/hang6-asharp.wav']
+		})
+	},
+	p: {
+		color: "yellow",
+		shift: new Point(quadxPoint * 2, 0),
+		sound: new Howl({
+				urls: ['sounds/Crop/hang6-asharp.wav']
+		})
+	}
+};
+
+var circles = [];
+var squares = [];
+
+var mousePos = view.center + [view.bounds.width / 3, 100];
+var position = view.center;
+
+for (var i=0; i<5; i++) {
+	var square = new Path.Rectangle({
+		point: view.center - new Point(40,40),
+		size: [80, 80],
+		strokeColor: 'white'
+		});
+
+	squares.push(square);
+};
+
+for (var i=0; i<3; i++) {
+	var square = new Path.Rectangle({
+		point: view.center - new Point(20,20),
+		size: [40, 40],
+		strokeColor: 'white'
+		});
+
+	squares.push(square);
+};
+
+
+function onKeyDown(event){
+	if(keyData[event.key]){			
+		if(event.key === "space") {
+			var newCircle = new Path.Circle(new Point(view.center), 500);
+		} else {
+			var quadPoint = new Point(quadxPoint, quadyPoint);
+			var randomPoint = Point.random();
+			var point = quadPoint * randomPoint;
+			console.log(point);
+			point = point + keyData[event.key].shift;
+
+			console.log(keyData[event.key].shift);
+			console.log(point);
+
+			var newCircle = new Path.Circle(new Point(point), 500);
+		}
+
+		newCircle.strokeColor = "white";
+		circles.push(newCircle);
+
+		keyData[event.key].sound.play();
+	}
+
+}
+
+function onFrame(event) {
+	for (var i=0; i<circles.length; i++ ) {
+		// circles[i].fillColor.hue += 1;
+		circles[i].scale(.9);
+	};
+
+	for (var j=0; j<squares.length; j++ ) {
+		if(j>4) {
+			squares[j].rotate(-j/2-1);
+		} else 
+			squares[j].rotate(j/2+1);
+	};
+
+
+	// squareRotate.position.x += squareRotate.bounds.width / speed;
+
+	// if (squareRotate.bounds.left > view.size.width) {
+	//	squareRotate.position.x = -squareRotate.bounds.width;
+	// }
+}
+
+function onMouseMove(event) {
+	mousePos = event.point;
+}
+
+
+	</script>
+
+</head>
+<body>
+	<canvas id="myCanvas" resize></canvas>
+</body>
+</html>

@@ -9,5 +9,5 @@ permalink: /about/
 <p>Frank enjoys climbing rocks the hard way. He also enjoys taking the occasional picture or two to pad his hypothetical photography portfolio. </p>
 
 <p> Random play projects: </p>
-<div class="4u"><span class="image fit"><a href={{ "HangDrummer/hangdrummer.html" | prepend: site.url }} ><img src="/images/pic05.jpg" alt=""  /></a></span></div>
+[<img src="/images/pic05.jpg">](/HangDrummer/hangdrummer.html)
 
