@@ -22,3 +22,6 @@ github_username:
 
 # Build settings
 markdown: kramdown
+
+# Read More separator.
+excerpt_separator: <!–break–>
