@@ -24,4 +24,4 @@ github_username:
 markdown: kramdown
 
 # Read More separator.
-excerpt_separator: <!–break–>
+excerpt_separator: <!--break–->
