@@ -3,13 +3,16 @@ layout: single-default
 ---
 
 <article class="post">
+{% if page.title %}
 	<header>
 		<div class="title">
 			<h2><a href="#">{{ page.title }}</a></h2>
+			{% if page.subtitle %}
 			<p>{{ page.subtitle }}</p>
+			{% endif %}
 		</div>
 	</header>
-
+{% endif %}
 	<!-- post content -->
 		{{ content }}
 
