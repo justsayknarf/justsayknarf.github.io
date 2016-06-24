@@ -11,8 +11,9 @@ email: frank.kb.yang@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
    A place for armchair philosophy, life, and other musings. 
 blurb: > 
-  Hi. I'm Frank KB Yang, not to be confused with other Frank Yangs that don't have that KB in the middle. </p>
-  I muse about things. Sometimes I take pictures of things.
+  Hi. I'm Frank KB Yang, not to be confused with other Frank Yangs that don't have that KB in the middle. 
+  <p> I muse about things. Sometimes I take pictures of things.</p>
+  
 baseurl: "/" # the subpath of your site, e.g. /blog
 assetsurl: "/assets"
 imagesurl: "/images"
@@ -25,3 +26,6 @@ markdown: kramdown
 
 # Read More separator.
 excerpt_separator: <!--break–->
+
+# blog permalinks. main pages should overwrite this.
+permalink: /blog/:year/:month/:day/:title/

@@ -1,9 +1,0 @@
----
-layout: post
-title:  "The Importance of Being"
-subtitle: "Okay this is my real hello world"
-date: 
-categories: musings
-author: knarf
----
-

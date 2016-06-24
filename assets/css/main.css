@@ -18,6 +18,8 @@
 		vertical-align: baseline;
 	}
 
+
+
 	article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
 		display: block;
 	}
@@ -2948,7 +2950,7 @@
 
 	body {
 		padding-top: 3.5em;
-	}
+	}	
 
 	#header {
 		display: -moz-flex;
