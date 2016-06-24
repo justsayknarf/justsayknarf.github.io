@@ -25,7 +25,7 @@ github_username:
 markdown: kramdown
 
 # Read More separator.
-excerpt_separator: <!--break–->
+# excerpt_separator: <!--break–->
 
 # blog permalinks. main pages should overwrite this.
 permalink: /blog/:year/:month/:day/:title/

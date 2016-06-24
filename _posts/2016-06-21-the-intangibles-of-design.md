@@ -5,6 +5,7 @@ subtitle: "Where's the rulebook?"
 date: 2016-06-21 14:33:17 -0800
 categories: design
 author: knarf
+excerpt_separator: <!--more-->
 ---
 
 I grew up as an engineer. Growing up, I was surrounded by books, rules, guidelines, and structure. I built what I knew based off of what was shown to me as correct. I wasn't the type to explore the abstract possibilities of these things.  Provided what I was taught was from a source that I respected, it was the best way to do it. 
@@ -15,7 +16,7 @@ And I never considered that everything that was in front of me HAD been designed
 
 Things are obviously much much different now. 
 
-<!--break-->
+<!--more-->
 
 Nowadays, I find myself touching the surfaces of everything, admiring the texture, the color, the angles of whatever it is I'm using, mentally raising a glass with a subtle headnod to its designers. 
 
