@@ -6,6 +6,7 @@ date: 2016-06-21 14:33:17 -0800
 categories: design
 author: knarf
 excerpt_separator: <!--more-->
+book: "Thinking Fast and Slow, by Daniel Kahneman"
 ---
 
 I grew up as an engineer. Growing up, I was surrounded by books, rules, guidelines, and structure. I built what I knew based off of what was shown to me as correct. I wasn't the type to explore the abstract possibilities of these things.  Provided what I was taught was from a source that I respected, it was the best way to do it. 
