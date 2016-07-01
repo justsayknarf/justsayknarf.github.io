@@ -7,6 +7,10 @@ categories: product
 author: knarf
 ---
 
+**Note: I did recently watch a couple movies in the Fast and Furious franchise, so I'm more than primed to lavishly celebrate all forms of loyalty and family and trust. I may be a bit biased about all of this.** 
+
+![look at this loyalty](http://cdn3-www.craveonline.com/assets/uploads/2013/12/Fast-and-Furious-6-Blu-ray-Header.jpg)
+
 I have mixed emotions about not having a "hierarchy" and "everyone having a say" when it comes to projects.  Everyone SHOULD have a voice on a team. It wouldn't be a team otherwise.  However, I DON'T believe everyone's opinions are always correct. 
 
 Now let me clarify here. I'm not trying to establish a hierarchical system in any team, nor am I saying that one person's opinions should always be weighed more than others.  What I'm trying to say is that while everyone's opinion SHOULD matter, everyone needs to TRUST in their team members and their respective roles as well.  There's a reason why design-by-committee should be avoided by all costs.
@@ -23,4 +27,3 @@ Respect the process, and trust in your team. Designers are there to design; they
 
 The PM acts in the best interest of the product. Assuming the PM has a capable team, the team needs to trust in the PM's decisions, and the PM needs to trust the team to help him/her make them.
 
-Note: I may be biased about all of this. I did recently watch a couple movies in the Fast and Furious franchise, so I'm primed to celebrate all forms of loyalty and family. 
