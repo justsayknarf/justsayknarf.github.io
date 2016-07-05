@@ -3249,7 +3249,6 @@
 		}
 
 /* Intro */
-
 	#intro .logo {
 		border-bottom: 0;
 		display: inline-block;
@@ -3272,7 +3271,7 @@
 			top: 0;
 			width: 100%;
 		}
-
+		
 		#intro .logo img {
 			display: block;
 			margin-left: -0.25em;
@@ -3287,7 +3286,7 @@
 	#intro header p {
 		font-size: 0.8em;
 	}
-
+		
 	@media screen and (max-width: 1280px) {
 
 		#intro {
