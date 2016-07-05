@@ -2,7 +2,7 @@
 layout: post
 title:  "Unsolicited Yelp analysis"
 subtitle: "by someone with no design background"
-date:   2016-07-04 22:07:17 -0800
+date:   2016-07-03 22:07:17 -0800
 categories: product
 author: knarf
 excerpt_separator: <!--more-->
