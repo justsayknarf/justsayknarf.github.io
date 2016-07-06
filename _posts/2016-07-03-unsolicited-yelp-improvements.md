@@ -9,9 +9,10 @@ excerpt_separator: <!--more-->
 ---
 
 I currently live in San Francisco, one of the most diverse cities, and a city that celebrates its food offerings and California-fusion, farm-to-table, organic, free-range, vegan, hidden-gem restaurants. 
+
 <a href="#" class="image featured">
 ![so fresh](http://www.unknownmale.com/wp-content/plugins/wp-o-matic/cache/a048cfe174_instagram-chef-jacques-la-merde-plating-junk-food-like-high-end-cuisine-13.jpg)
-</a>
+</a> 
 
 There are SO many restaurants out there, and Yelp is my go-to app to find out what to eat. But, being a user for however many years I've been using it, I still find... SOMETHING clunky about it.  It does what it needs to do, but something seems a bit dated, and I wanted to think WHY it did. 
 
