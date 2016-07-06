@@ -34,7 +34,7 @@ Yelp app users were more than **10 times as engaged** as website users based on 
 
 From these numbers, it does look like Yelp is focusing a lot of mobile right now. But the curious thing is the trend of the graph. 
 
-![graph](/images/yelpstats.jpg)
+![graph](/images/yelpstats.JPG)
 
 Desktop usage seems to be running flat. Without proper numbers, I won't say that it's actually stagnant or whatever, but it sure does look it. SOMEONE should still be manning the helm of the desktop application. While the numbers do show mobile as trending, it doesn't explain to me why desktop being ignored.  
 
@@ -46,10 +46,10 @@ The Yelp Social Network?
 Let's compare the landing pages for a user logged in, and a user that hasn't.  
 <div class="row uniform">
 	<div class="6u">
-	<span class="image fit"><img src="/images/yelp-home-in.jpg"></span> 
+	<span class="image fit"><img src="/images/yelp-home-in.JPG"></span> 
 	</div>
 	<div class="6u">
-	<span class="image fit"><img src="/images/yelp-home-out.jpg"></span>
+	<span class="image fit"><img src="/images/yelp-home-out.JPG"></span>
 	</div>
 </div>
 
