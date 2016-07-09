@@ -112,10 +112,10 @@ There are phases for a user to be deeply engaged with a product, and the user ne
 
 It's important to note first though: *Active users and engaged users are NOT the same thing.*
 
-Why is this important for Yelp?
-===============================
+But Yelp's success WAS its social element
+=========================================
 
-Yelp's social aspect of reviews was the reason for its wild success. Earlier review sites of the time attempted to compete by gathering anonymous reviews, but it was Yelp's social branding that allowed Yelp to be the "trustworthy" source of reviews. By forcing users to have a profile, it gave these anonymous reviews a name and a face, forcing each user to present their review as part of their personal branding. A mediocrely written review reflected poorly on the user, not the restaurant. 
+Yelp's social aspect of reviews was indeed the reason for its wild success. Earlier review sites of the time attempted to compete by gathering anonymous reviews, but it was Yelp's social branding that allowed Yelp to be the "trustworthy" source of reviews. By forcing users to have a profile, it gave these anonymous reviews a name and a face, forcing each user to present their review as part of their personal branding. A mediocrely written review reflected poorly on the user, not the restaurant. 
 
 Users were excited about this! The idea of building your social capital through your reviews was a good reason for users to hop on board, and the promise of Yelp Elite seealed the deal.  According to a study in 2011, 44% of all reviews on Yelp during the study’s timeframe were written by elite members. *([source](http://searchengineland.com/yelp-crushed-citysearch-yahoo-why-google-stealing-yelps-playbook-78623))* Some of these particularly engaged users became Community Managers, and they threw exciting Yelp Elite events that really made the high quality reviews untouchable. 
 
@@ -124,6 +124,9 @@ And the psychology behind some of these Yelp Elite Squad members is that [they a
 And the current layout reflects that mentality. The most important thing for a logged-in user is to quickly *write a review*. And then, beyond that, show some social network things.
 
 So what is causing [all the fuss](http://www.wsj.com/articles/yelp-needs-some-help-1454866219) about user growth now? 
+
+Yelp Elitist
+============
 
 I personally think the Yelp reviewer pool is running dry. Google has been building up its listings of restaurants and reviews to moderate success, and people are drawn to whatever is most convenient.  People who have been writing reviews will continue writing reviews, but beyond that, people aren't seeing the reason to join this Yelp community anymore. 
 
@@ -168,7 +171,7 @@ So let's take a look at some potential Engagement Activities for Yelp:
 
 To be honest, I think Yelp has already done a great job in bringing in traffic from the normal users of the site; the ones that are just there to find the information they want and get out are successfully doing just that. 
 
-So if a user only needs to search for a business, call, and find directions to be considered engaged, then perfect. The lurkers are engaged, directly up to the point where they find what they need, and leave.
+So if a user only needs to search for a business, call, and find directions to be considered engaged, then perfect. The lurkers are engaged, *up to the point where they find what they need, and then they leave*.
 
 So what should an engaged user be?  To define that we should first look at what Yelp's ideal user looks like.  Yelp's content is user-generated.  Yelp relies on users to generate new content. It's the community of reviewers that Yelp celebrates, and without engagement from the contributors, Yelp's content atrophies. Perhaps there are studies as to what happens when the community no longer continues to grow; I have no idea what happens. Something tells me, though, as a publically traded company, the market would not look kindly on stagnant growth.
 
@@ -207,15 +210,17 @@ Curiously enough, there are several of these activities that can be done anonymo
 The Curious Lurker
 ==================
 
-According to the 1% rule, 90% are lurkers. These are the users that enjoy using the site for the services that it immediately provides.  In Yelp's case, it's the catalog of restaurants and businesses. They might see the community from the outside, but they might not have stepped their foot in the door quite yet. They simply enjoy the content for what it is, and the lurker's engagement with the product solely lies on how much value the lurker gets out of it. Namely, how easy it is to find what he/she needs, how easy it is to find that restaurant to eat at.
+According to the 1% rule, 90% are lurkers. These are the users that enjoy using the site for the services that it immediately provides.  In Yelp's case, it's the catalog of restaurants and businesses. They might see the community from the outside, but they might not have stepped their foot in the door quite yet. They simply enjoy the content for what it is, and the lurker's engagement with the product solely lies on how much value the lurker gets out of it (i.e. how easy it is to find what restaurant to eat at).
 
-If the goal is to entice the lurker to step inside and begin interacting with the community, there needs to be a reason for the lurker to want to do so.  There needs to be benefits that the lurker can immediately reap while he/she is toying with the idea of being an active member. With new benefits in hand, the user will be more willing to explore the community, and explore all the social aspects.  
+If the goal is to entice the lurker to step inside and begin interacting with the community, there needs to be a reason for the lurker to want to do so.  There need to be benefits that the lurker can immediately reap while he/she is toying with the idea of being an active member. With new benefits in hand, the user will be more willing to explore the community, and explore all the social aspects.  
 
-This is the [social difficulty curve](https://www.youtube.com/watch?v=QuG7mIpVFc0), which is brought up in game design for online multiplayer games.  Guiding the user, encouraging the user to take the next step when the user feels ready, allowing the user to come to a conclusion himself/herself based on all the pleasant experiences before: these are all methodically designed with the user in mind. In fact, many games eventually fail if they are not designed properly, and online communities are no exception. 
+This is the [social difficulty curve](https://www.youtube.com/watch?v=QuG7mIpVFc0), which is brought up in game design for online multiplayer games.  Guiding the user, encouraging the user to take the next step when the user feels ready, allowing the user to come to a conclusion himself/herself based on all the pleasant experiences before: these are all methodically designed with the user in mind. In fact, many games eventually fail if they are not designed properly. 
 
-Now obviously, the gamification card has been played out over the last few years, so I'm not necessarily talking badges, achievements, and progress bars.  That would be potentially force feeding the gamification idea to this community. But the abstract idea of "progress" can still be applied. 
+Now obviously, the gamification card has been played out over the last few years, so I'm not necessarily talking badges, achievements, and progress bars.  That would be potentially force feeding a trite gamification idea without properly analyzing the situation. But the abstract idea of "progress" can still be applied. 
 
-In Part 2 I'm going to dive deeper into this idea to see how this might be done.
+The path from lurker to Yelp Elite is not a short one for reluctant users. 
+
+In Part 2, I'm going to dive deeper into this idea to see how this path might be improved.
 
 
 
