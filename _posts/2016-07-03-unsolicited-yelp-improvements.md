@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "Unsolicited Yelp analysis"
-subtitle: "by a non Yelp Elite"
+title:  "Unsolicited Yelp analysis (part 1)"
+subtitle: "by a member of the Yelp Pleb"
 date:   2016-07-03 22:07:17 -0800
 categories: product
 author: knarf
@@ -61,7 +61,14 @@ Okay, so let's compare the landing pages for yelp.com, based on if we're logged 
 	<span class="image fit"><img src="/images/yelp-home-out.JPG"></span>
 	</div>
 </div>
-
+<div class="row uniform">
+	<div class="6u" style="text-align:center;">
+	Logged In User
+	</div>
+	<div class="6u" style="text-align:center;">
+	Normal User
+	</div>
+</div>
 <p></p>
 
 Hm. 
@@ -76,7 +83,9 @@ Why is Recent Activity of people I don't know? Oh okay, so it's a list of things
 
 I'm not much of a contributor of Yelp, so it's apparent that this homepage might not be tailored for people like me. I typically see Yelp as a restaurant/food search engine, and that's it. There's no social network aspect to this for me; that's what facebook/instagram/snapchat is for. 
 
+<span class="image fit">
 ![I'm going to get so many likes](https://si.wsj.net/public/resources/images/BN-LH781_NYINST_P_20151117151507.jpg)
+</span>
 
 So what is Yelp trying to do with this page then?  I'm not entirely sure. It SEEMS like the primary action is for me to either search for a restaurant, or write a review... and that's it. And I don't want to write a review.  At least, not to post to Yelp for everyone to see. 
 
@@ -103,9 +112,38 @@ There are phases for a user to be deeply engaged with a product, and the user ne
 
 It's important to note first though: *Active users and engaged users are NOT the same thing.*
 
+Why is this important for Yelp?
+===============================
+
+Yelp's social aspect of reviews was the reason for its wild success. Earlier review sites of the time attempted to compete by gathering anonymous reviews, but it was Yelp's social branding that allowed Yelp to be the "trustworthy" source of reviews. By forcing users to have a profile, it gave these anonymous reviews a name and a face, forcing each user to present their review as part of their personal branding. A mediocrely written review reflected poorly on the user, not the restaurant. 
+
+Users were excited about this! The idea of building your social capital through your reviews was a good reason for users to hop on board, and the promise of Yelp Elite seealed the deal.  According to a study in 2011, 44% of all reviews on Yelp during the study’s timeframe were written by elite members. *([source](http://searchengineland.com/yelp-crushed-citysearch-yahoo-why-google-stealing-yelps-playbook-78623))* Some of these particularly engaged users became Community Managers, and they threw exciting Yelp Elite events that really made the high quality reviews untouchable. 
+
+And the psychology behind some of these Yelp Elite Squad members is that [they are doing good](http://www.bizjournals.com/phoenix/blog/business/2016/03/exclusive-phoenixs-yelp-elite-squad-members-talk.html). There is definitely an element of defending what Yelp stands for and helping out small business. 
+
+And the current layout reflects that mentality. The most important thing for a logged-in user is to quickly *write a review*. And then, beyond that, show some social network things.
+
+So what is causing [all the fuss](http://www.wsj.com/articles/yelp-needs-some-help-1454866219) about user growth now? 
+
+I personally think the Yelp reviewer pool is running dry. Google has been building up its listings of restaurants and reviews to moderate success, and people are drawn to whatever is most convenient.  People who have been writing reviews will continue writing reviews, but beyond that, people aren't seeing the reason to join this Yelp community anymore. 
+
+This is based completely off of personal opinion, but I feel the [merit][merit] of a single Yelp review now holds [less respect][respect] than ever before, and Yelp Elite doesn't quite have the same allure as it once did. That [one South Park episode](https://www.youtube.com/watch?v=nFhDyZ4HFgY) (warning: NSFW South Park language) surely didn't help, either. The challenge to get more people to create quality content must be getting harder, as users are turning to their mobile devices to use the app. 
+
+Accessing the app via mobile makes the social element of Yelp a lot harder, because the social content was never designed to be bite-sized (heh). People don't pull out their phone to simply browse the newest reviews have been written recently (...in my opinion. Maybe some people do). 
+
+The increase in mobile usage is could be a reflection on the convenience of data access, and nothing else. 
+
+If engagement is running low, Yelp needs to address what it means to be engaged with the app in the first place, and recognize that Yelp Elite doesn't mean what it did 5 years ago.  
+
+
 Engage
 ======
-![engage](http://ecologyofeducation.net/wsite/wp-content/uploads/2012/06/picard-588x448.jpg)  
+
+<div style="width:100%; height:30em; overflow:hidden;">
+<span class="image fit">
+<img src="http://ecologyofeducation.net/wsite/wp-content/uploads/2012/06/picard-588x448.jpg">
+</span>
+</div>
 
 So what does it mean to engage a user? From app to app, it's up to the team to decide and optimize on. 
 
@@ -119,25 +157,69 @@ So let's take a look at some potential Engagement Activities for Yelp:
 * Search for restaurant/business, read reviews.
 * Call business through Yelp. 
 * Find directions to business through Yelp. 
-* Log in
-* Write a review
-* Share a photo
-* React to (like, compliment) a review
 * View an event
+* Log in
 * Save a bookmark
-* Send a message
+* React to (like, compliment) a review
+* Modify restaurant/business information
 * Start a "Conversation"
-
-Which one of these even need a user to be logged in? And, on another note, which one of these benefit from users creating the content? 
+* Share a photo
+* Write a review
 
 To be honest, I think Yelp has already done a great job in bringing in traffic from the normal users of the site; the ones that are just there to find the information they want and get out are successfully doing just that. 
 
-If the an engaged user of Yelp only needs to successfully search for a business, call, and find directions, then perfect. We're done.
+So if a user only needs to search for a business, call, and find directions to be considered engaged, then perfect. The lurkers are engaged, directly up to the point where they find what they need, and leave.
 
-But this can't be the definition of an engaged user. Yelp's content is user-generated.  Yelp needs to engage the user to write reviews. 
+So what should an engaged user be?  To define that we should first look at what Yelp's ideal user looks like.  Yelp's content is user-generated.  Yelp relies on users to generate new content. It's the community of reviewers that Yelp celebrates, and without engagement from the contributors, Yelp's content atrophies. Perhaps there are studies as to what happens when the community no longer continues to grow; I have no idea what happens. Something tells me, though, as a publically traded company, the market would not look kindly on stagnant growth.
+
+Yelp's goal should be to engage the common user in hopes of converting a user into a reviewer, into an **active contributor to Yelp's ecosystem**, whether that be curating existing Yelp information, sharing a photo, or, ideally, creating new content.  
+
+So how *does* a user go from lurker to a contributing member of Yelp's society?
+
+Contributing to society - Yelp edition
+======================================
+<span class="image fit">
+![community][communitypic]
+</span>
+
+Lurkers don't just instantly BECOME power users in a community, especially if the community has been around for some time. There is no magic switch that flips once a user creates an account. Users will create accounts out of curiosity, or if they're forced to. 
+
+A social difficulty curve needs to be addressed when considering how a former lurker evolves into a power user. There should be reasons why a user would want to in the first place.  According to the [1% rule of Internet Culture][internet-culture], 1% of the users of a website actively create new content, 9% modify that content, while 90% lurk. 
+
+Let's break down those Engagement Activities into these user-types. 
+
+| **Activity** | **User type** | **Log in required** | 
+|--- | :-: | :-: |
+| Search for restaurant/business, read reviews. | Lurker | N |
+| Call business through Yelp. | Lurker | N | 
+| Find directions to business through Yelp. | Lurker | N |
+| View an event | Lurker | N |
+| Log in | Curious Lurker |  |
+| Save a bookmark | Curious Lurker | Y |
+| React to (like, compliment) a review | Modifier | N |
+| Modify restaurant information | Modifier | N |
+| Start a "Conversation" | Creator | Y |
+| Share a photo | Creator | Y |
+| Write a review | Creator | Y |
+
+Curiously enough, there are several of these activities that can be done anonymously, which causes users to subconsciously wonder what the point of creating an account is at all, if not to simply give Yelp more data?  What is the value to the *user*?  
+
+The Curious Lurker
+==================
+
+According to the 1% rule, 90% are lurkers. These are the users that enjoy using the site for the services that it immediately provides.  In Yelp's case, it's the catalog of restaurants and businesses. They might see the community from the outside, but they might not have stepped their foot in the door quite yet. They simply enjoy the content for what it is, and the lurker's engagement with the product solely lies on how much value the lurker gets out of it. Namely, how easy it is to find what he/she needs, how easy it is to find that restaurant to eat at.
+
+If the goal is to entice the lurker to step inside and begin interacting with the community, there needs to be a reason for the lurker to want to do so.  There needs to be benefits that the lurker can immediately reap while he/she is toying with the idea of being an active member. With new benefits in hand, the user will be more willing to explore the community, and explore all the social aspects.  
+
+This is the [social difficulty curve](https://www.youtube.com/watch?v=QuG7mIpVFc0), which is brought up in game design for online multiplayer games.  Guiding the user, encouraging the user to take the next step when the user feels ready, allowing the user to come to a conclusion himself/herself based on all the pleasant experiences before: these are all methodically designed with the user in mind. In fact, many games eventually fail if they are not designed properly, and online communities are no exception. 
+
+Now obviously, the gamification card has been played out over the last few years, so I'm not necessarily talking badges, achievements, and progress bars.  That would be potentially force feeding the gamification idea to this community. But the abstract idea of "progress" can still be applied. 
+
+In Part 2 I'm going to dive deeper into this idea to see how this might be done.
 
 
 
-According to the [1% rule of Internet Culture](https://en.wikipedia.org/wiki/1%25_rule_(Internet_culture)), 1% of the users of a website actively create new content, while 99% lurk. If Yelp is trying to foster a community, I hope that they meet at least 1%. Again I don't have the numbers, so I can't say if Yelp is actually succeeding or not, but I do think Yelp has a LOT it can improve on to really drive more user interaction with its casual users. 
- 
-With the [merit](http://www.motherjones.com/environment/2015/08/i-cant-stop-reading-these-one-star-yelp-reviews-national-parks) of a single Yelp review holding [less and less respect](http://insidescoopsf.sfgate.com/blog/2014/09/17/richmond-restaurant-owner-encourages-bad-yelp-reviews/), I think Yelp could stand to redesign some of its pages, and up the user engagement.
+[communitypic]: https://www.nbc.com/sites/nbcunbc/files/files/styles/1280x720/public/2013_1210_Community_Show_KeyArt_1920x1080_CA_0.jpg
+[internet-culture]: https://en.wikipedia.org/wiki/1%25_rule_(Internet_culture)
+[merit]: http://www.motherjones.com/environment/2015/08/i-cant-stop-reading-these-one-star-yelp-reviews-national-parks
+[respect]: http://insidescoopsf.sfgate.com/blog/2014/09/17/richmond-restaurant-owner-encourages-bad-yelp-reviews/
