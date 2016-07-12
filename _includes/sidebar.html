@@ -14,34 +14,40 @@
 		</section>
 
 	<!-- About -->
-		<section class="blurb">
+<!-- 		<section class="blurb">
 			<h2>About</h2>
 			<p>{{ site.blurb }} </p>
 			<ul class="actions">
 				<li><a href="/about/" class="button">Learn More</a></li>
 			</ul> 
-		</section>
+		</section> -->
 
 	<!-- Mini Posts -->
-<!-- 		<section>
-			<div class="mini-posts"> -->
+{% for post in site.posts %}
+    {% if post.featured == true %}
+		<section>
+			<div class="mini-posts">
+			<h2>Featured Post:</h2>
 
 				<!-- Mini Post -->
-					<!-- <article class="mini-post">
+					<article class="mini-post">
 						<header>
-							<h3><a href="#">Hello World.</a></h3>
-							<time class="published" datetime="2016-06-14">June 14, 2016</time>
+							<h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
+							<time class="published" datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%b %-d, %Y" }}</time>
 							<a href="#" class="author"><img src="/images/avatar.jpg" alt="" /></a>
 						</header>
 						<a href="#" class="image"><img src="/images/pic04.jpg" alt="" /></a>
-					</article> -->
-<!-- 			</div>
-		</section>  -->
+					</article>
+			</div>
+		</section> 
+  {% endif %}
+{% endfor %}
 
 	<!-- Todo List -->
 	<section class="blurb">
 		<h2>Site Todos:</h2>
 		<ul>
+			<li>Get Tags/Categories working.</li>
 			<li>Update landing page.</li>
 			<li>Fix image links.</li>
 			<li>Look at hosting options?</li>
@@ -51,7 +57,7 @@
 	</section>
 
 	<!-- Posts List -->
-		{% for post in site.posts %}
+		{% for post in site.posts limit:5 %}
  		<section>
 			<ul class="posts">
 				<li>
