@@ -5,19 +5,31 @@ subtitle: "by a member of the Yelp Pleb"
 date:   2016-07-05 22:07:17 -0800
 categories: product
 author: knarf
+book: "Moonwalking with Einstein"
 excerpt_separator: <!--more-->
 ---
 Continued from [Part 1]({% post_url 2016-07-03-unsolicited-yelp-analysis %}) and [Part 2]({% post_url 2016-07-04-unsolicited-yelp-analysis %}) of my Unsolicited Yelp Analysis posts. 
 
 Check those out first!  
 
-Online communities are an interesting thing. In my last posts, I claimed that the current design does not encourage users to use the platform for anything BUT search, and that it's about time that this was addressed.
+In my last posts, I claimed that the current design does not encourage users to use the platform for anything BUT search, and that it's about time that this was addressed.
 
 That's understandbly a bold claim from someone that only has anecodotal data and a very small sample size, but let's keep going anyway.  So let's take a look at why Yelp could focus more on the user's experience in the community, and what it takes for an online community to be successful.
 
 <!--more-->
 
-For any given online community to be successful over time, we should consider what psychological barriers a user might be presented with each step of the way, and design accordingly to help the user adjust. That is, we should consider the **social difficulty curve for engagement**. 
+Social network intimidation
+===========================
+
+I find online communities fascinating.  There have been a plenty of social networks that I've considered joining at times, only to be feel overwhelmed by the community at large, wondering why I should even bother. I've already lived my life for this long without it; it will take a LOT of hype at this point to consider it.  
+
+Other times, when I find myself an early adopter of a technology, I'm usually much less intimidated, and I find myself trying instead to convince my friends to join, only to recognize that they feel the same way I did with other networks. 
+
+And "intimidated" isn't even the right word; users are constantly performing subconscious cost-benefit analyses for everything they do. *Should I go to the party or stay in and sleep? What extra benefits am I getting for creating an account over using this app anonymously? Should I start watching this series that everyone is talking about or should I wait for it to end?* 
+
+But it comes down to the question: **Is it worth my time?**
+
+As a platform matures, it becomes increasingly important for any given online community to consider what psychological barriers a new user might be presented with each step of the way, and design accordingly to help the user adjust. That is, we should consider the **social difficulty curve for engagement**. 
 
 | I'm adopting this idea of the social difficulty curve from an [excellent Youtube video by the team from Extra Credits](https://www.youtube.com/watch?annotation_id=annotation_144385421&feature=iv&index=15&list=PLhyKYa0YJ_5CbUOb7kGRGS_g2NcsKhaaM&src_vid=QuG7mIpVFc0&v=QuG7mIpVFc0) (which I highly recommend watching), where they talk about the social difficulty curve in games, namely Massively Multiplayer Online gaming communities such as World of Warcraft. Successful MMORPGs are brilliantly DESIGNED for the player to be introduced to each social mechanic incrementally. These games feed social mechanics to the player in baby steps, giving time for players to feel comfortable with each introduced mechanic, whether it is utilizing the auction house, forming ad hoc groups to finish quests, or simply being able to wave hello in the game. It is after some time that players naturally come to the conclusion that they have more FUN when utilizing the social mechanic. As connections with the game and the community are formed, the game offers extra social mechanics to help with maintaining these new relationships, and the player becomes more and more invested in the community. 
 
@@ -70,7 +82,7 @@ Okay?
 Now let's take a look at Yelp's homepage again.
 
 
-Welcome! now get to work
+Welcome! Now get writin'
 ========================
 
 <div class="row uniform">
@@ -216,54 +228,31 @@ The initial challenge is to simply get the snowball rolling.
 
 I have no doubt that after a certain point, Yelp has a handle on keeping quality reviewers continually engaged. The challenge is simply getting more users to become quality contributors.
 
-So now what?
-============
+So now what? Get buy-in from the team
+=====================================
 
-Now I show this to a designer. 
+Now I show this to a designer, and/or I show this to the data scientist. 
 
-No seriously, I'm terrible at designing. 
+No seriously, I'm terrible at designing. I'm only being half facetious when I say this, but assuming I trust my team and my team trusts me, this is the time to bring in the people to do the job you hired them to do.  
 
-ugh
-===
+UI/UX overhauls are huge endeavors, no matter how you look at it. Not only is the sheer number of new features daunting enough, the buy-in that is needed across the team needs to be unanimous. 
 
+Buy-in is best supported by data, so the data needs to be presented in a fashion that supports the endeavor. In this case, I don't know what the data actually is, but here is another brain dump of how I might approach it.
 
+Funnel it down
+==============
 
-There are plenty of changes that can be made, but we should at least try to identify what's a higher priority. 
+We can treat the journey to writing a review as a funnel, and track to see where the biggest dropoff is. On one end, we can look at how many Yelp users there are registered. On the other end, we can calculate how many of these users have written at least 6 reviews in the 6 months (engaged users). These metrics are fairly random, but they are targets to start with.
 
-We can treat the journey to writing a review as a funnel, and track to see where the biggest dropoff is. It wouldn't be a funnel that would be completed in a single session, but over significant time, so we can just look at numbers. 
+To understand where users are dropping off, we can consider tracking intermediate metrics that users pass along the social difficulty curve on the path to Engaged User. For example, we can try breaking down activities into network sizes: Self, Immediate Network, Community Network, Public Network, and we might be able to identify where the deficiency is. Perhaps these don't exist quite yet. 
 
-Right now we have datapoints for number of Yelp users registered. We can also find number of Yelp users that have written at least 5 reviews in the last month (engaged users). 
+This could be utilizing bookmarks (self), checking in (immediate), writing tips (immediate), uploading photos (public network), reacting to reviews of friends (immediate network), reacting to reviews of non-friends (public network). Placing activities along the social difficulty curve will help prioritize which parts to address first.
 
-To understand the dropoff, whatever it may be, we can begin introducing intermediate "steps" for a user to take on the path to Engaged User. 
+Remember, people aren't dropping off from writing reviews because they don't know how. At this point in Yelp's maturity, it's most likely because they simply don't want to. 
 
-If we break down activities into network sizes: Self, Immediate Network, Community Network, Public Network, we might be able to identify where the deficiency is.
+Will it be worth the effort in the end? I hope so. But that's the risk that needs to be taken. 
 
-This could be utilizing bookmarks, checking in, writing tips, uploading photos, reacting to reviews. Look for trends, look to convert as many as possible. 
-
-Remember, people aren't dropping off from writing reviews because they don't know how. At this point in Yelp's maturity, it's most likely because they simply don't want to.
-
-
-
-
-
-
-
-
-What's an easy approach to solving this problem? 
-
-Well for Yelp's case, let's assume that the end goal is for a lurker to become an active reviewer, and let's define an active reviewer as a user that writes at least one review a month. 
-
-We can calculate conversion rates based off this, by parsing through available data. 
-
-Drawing up a funnel chart would be a good visualization for a task like this, with users with an account at the top, and users that have more than x reviews in the past 3 months at the bottom. 
-
-Now, the more elements we have in the middle, the more insight we gain. 
-
-
-
-
-
-
+And what is life without a little risk anyway?
 
 
 
