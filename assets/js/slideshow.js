@@ -27,21 +27,21 @@ function showSlides(n) {
   dots[slideIndex-1].className += " active";
 }
 
-// function autoshowSlides() {
-//     var i;
-//     if(clicked) {
-//       clicked = false;
-//       setTimeout(autoshowSlides, 8000);
-//       return;
-//     }
+function autoshowSlides() {
+    var i;
+    if(clicked) {
+      clicked = false;
+      setTimeout(autoshowSlides, 8000);
+      return;
+    }
 
-//     var slides = document.getElementsByClassName("mySlides");
-//     for (i = 0; i < slides.length; i++) {
-//         slides[i].style.display = "none"; 
-//     }
-//     slideIndex++;
-//     if (slideIndex> slides.length) {slideIndex = 1} 
-//     slides[slideIndex-1].style.display = "block"; 
-//     setTimeout(autoshowSlides, 8000); // Change image every 2 seconds
-// }
+    var slides = document.getElementsByClassName("mySlides");
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none"; 
+    }
+    slideIndex++;
+    if (slideIndex> slides.length) {slideIndex = 1} 
+    slides[slideIndex-1].style.display = "block"; 
+    setTimeout(autoshowSlides, 8000); // Change image every 2 seconds
+}
 
