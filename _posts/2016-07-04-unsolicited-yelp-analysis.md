@@ -10,7 +10,7 @@ excerpt_separator: <!--more-->
 
 Continued from [Part 1]({% post_url 2016-07-03-unsolicited-yelp-analysis %}) of my Unsolicited Yelp Analysis.
 
-<div style="width:100%; height:30em; overflow:hidden;">
+<div style="width:100%; height:30em; overflow:hidden; ">
 <a href="#" class="image featured">
 <img src="http://ecologyofeducation.net/wsite/wp-content/uploads/2012/06/picard-588x448.jpg">
 </a>
@@ -53,7 +53,7 @@ Yelp's goal should be to engage the common user in hopes of converting a user in
 So the next question becomes: how *does* a user go from lurker to a contributing member of Yelp's society?
 
 Contributing back to society - Yelp edition
-======================================
+===========================================
 <span class="image fit">
 ![community][communitypic]
 </span>

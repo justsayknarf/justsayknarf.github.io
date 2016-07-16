@@ -8,15 +8,22 @@
 		</section>
 
 	<!-- Links -->
+		
 		<section>
 			<h2>Recent Posts</h2>
 			<ul class="links">
+			  {% for post in site.posts limit:5 %}
+		
 				<li>
 					<a href="#">
-						<h3>Hello World.</h3>
-						<p>Obligatory first post.</p>
+						<h3>{{ post.title }}</h3>
+						
+						<p>{{ post.subtitle }}</p>
+						
 					</a>
 				</li>
+			  {% endfor %}
+
 			</ul>
 		</section>
 

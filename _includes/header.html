@@ -1,7 +1,7 @@
 
 <!-- from template -->
 <header id="header">
-  <h1><a href="{{ site.url }}/">Huge Manatee</a></h1>
+  <h1><a href="{{ "welcome/" | prepend: site.baseurl }}">Huge Manatee</a></h1>
   <nav class="links">
     <ul>
       <li><a href={{ "about/" | prepend: site.baseurl }}>About</a></li>
@@ -12,12 +12,12 @@
   </nav>
   <nav class="main">
     <ul>
-      <li class="search">
+<!--       <li class="search">
         <a class="fa-search" href="#search">Search</a>
         <form id="search" method="get" action="#">
           <input type="text" name="query" placeholder="Search" />
         </form>
-      </li>
+      </li> -->
       <li class="menu">
         <a class="fa-bars" href="#menu">Menu</a>
       </li>
