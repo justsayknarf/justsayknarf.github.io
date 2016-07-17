@@ -2979,7 +2979,7 @@
 		position: fixed;
 		top: 0;
 		width: 100%;
-		z-index: 10000;
+		z-index: 9000;
 	}
 
 		#header a {
@@ -3644,4 +3644,13 @@
 @keyframes fade {
   from {opacity: .4} 
   to {opacity: 1}
+}
+
+ul.gallery {
+	list-style:none;
+	text-align: center;
+}
+
+.gallery li {
+	display: inline-block;
 }

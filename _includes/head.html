@@ -5,8 +5,11 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 	<meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
 
+	<link rel="stylesheet" href={{ "/css/lightbox.css" | prepend:site.assetsurl}} />
 	<!--[if lte IE 8]><script src={{ "/js/ie/html5shiv.js" | prepend:site.assetsurl}} ></script><![endif]-->
 	<link rel="stylesheet" href={{ "/css/main.css" | prepend:site.assetsurl}} />
 	<!--[if lte IE 9]><link rel="stylesheet" href={{ "/css/ie9.css" | prepend:site.assetsurl}} /><![endif]-->
 	<!--[if lte IE 8]><link rel="stylesheet" href={{ "/css/ie8.css" | prepend:site.assetsurl}} /><![endif]-->
+	
+	
 </head>
