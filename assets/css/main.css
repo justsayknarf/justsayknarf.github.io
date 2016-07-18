@@ -48,6 +48,8 @@
 		-webkit-text-size-adjust: none;
 	}
 
+
+
 /* Box Model */
 
 	*, *:before, *:after {
@@ -3654,3 +3656,20 @@ ul.gallery {
 .gallery li {
 	display: inline-block;
 }
+
+/* lightbox fix */
+	li.complete{
+		text-decoration: line-through;
+		font-style: italic;
+		color: #9a9a9a;
+	}
+
+	.gallery a {
+		text-decoration: none;
+		border: none;
+	}
+
+	.lightbox a {
+		text-decoration: none;
+		border: none;	
+	}
