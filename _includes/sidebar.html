@@ -27,7 +27,7 @@
     {% if post.featured == true %}
 		<section>
 			<div class="mini-posts">
-			<h2>Featured Post:</h2>
+			<h2>Featured Post</h2>
 
 				<!-- Mini Post -->
 					<article class="mini-post">
@@ -43,23 +43,11 @@
   {% endif %}
 {% endfor %}
 
-	<!-- Todo List -->
-	<section class="blurb">
-		<h2>Site Todos:</h2>
-		<ul>
-			<li class="complete">Update landing page.</li>
-			<li class="complete">Update photo portfolio styles.</li>
-			<li class="complete">Add Google analytics?</li>
-			<li>Fix image links in sidebar.</li>
-			<li>Get Tags/Categories working. </li>
-			<li>Look at alternative hosting options?</li>
-		</ul>
-	</section>
-
 	<!-- Posts List -->
-		{% for post in site.posts limit:5 %}
  		<section>
-			<ul class="posts">
+ 		<ul class="posts">
+ 		
+			{% for post in site.posts limit:5 %}
 				<li>
 					<article>
 						<header>
@@ -69,16 +57,27 @@
 						<a href="{{ post.url | prepend: site.url }}" class="image"><img src="/images/pic08.jpg" alt="" /></a>
 					</article>
 				</li>
+				{% endfor %}
 			</ul>
 		</section>
-		{% endfor %}
-	
+
+	<!-- Todo List -->
+	<section class="blurb">
+		<h2>About</h2>
+		<p>	Welcome to my site. I'm not the best at naming things, so Huge Manatee will do for now. I'm open to suggestions. </p>
+		
+		<ul class="actions">
+			<li>
+				<a href="/about/" class="button">Learn more</a>
+			</li>
+		</ul>
+	</section>
 
 	<!-- Footer -->
 		<section id="footer">
 			<ul class="icons">
 				<li><a href="http://github.com/justsayknarf/" class="fa-github"><span class="label">Github</span></a></li>
-				<li><a href="https://www.flickr.com/photos/142380353@N02/" class="fa-flickr"><span class="label">Flickr</span></a></li>
+				<li><a href="https://www.flickr.com/photos/justsayknarf" class="fa-flickr"><span class="label">Flickr</span></a></li>
 				<li><a href="mailto:frank(dot)kb(dot)yang@gmail.com" class="fa-envelope"><span class="label">Email</span></a></li>
 			</ul>
 			<p class="copyright">&copy; Frank Yang. Design: <a href="http://html5up.net">HTML5 UP</a>.</p>
