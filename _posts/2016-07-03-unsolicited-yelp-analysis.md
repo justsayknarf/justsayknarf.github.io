@@ -11,7 +11,7 @@ featured: true
 
 I currently live in San Francisco, one of the most diverse cities, and a city that celebrates its food offerings and California-fusion, farm-to-table, organic, free-range, vegan, hidden-gem restaurants. 
 
-<a href="#" class="image featured">
+<a class="image featured">
 ![so fresh](http://www.unknownmale.com/wp-content/plugins/wp-o-matic/cache/a048cfe174_instagram-chef-jacques-la-merde-plating-junk-food-like-high-end-cuisine-13.jpg)
 </a> 
 

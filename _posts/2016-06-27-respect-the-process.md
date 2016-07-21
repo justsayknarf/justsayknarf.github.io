@@ -10,7 +10,7 @@ excerpt_separator: <!--more-->
 
 **Note: I did recently watch a couple movies in the Fast and Furious franchise, so I'm more than primed to lavishly celebrate all forms of loyalty and family and trust. I may be a bit biased about all of this.** 
 
-<a href="#" class="image featured">
+<a class="image featured">
 ![look at this loyalty](http://cdn3-www.craveonline.com/assets/uploads/2013/12/Fast-and-Furious-6-Blu-ray-Header.jpg)
 </a>
 

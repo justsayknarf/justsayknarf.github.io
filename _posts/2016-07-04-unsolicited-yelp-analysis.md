@@ -11,7 +11,7 @@ excerpt_separator: <!--more-->
 Continued from [Part 1]({% post_url 2016-07-03-unsolicited-yelp-analysis %}) of my Unsolicited Yelp Analysis.
 
 <div style="width:100%; height:30em; overflow:hidden; ">
-<a href="#" class="image featured">
+<a class="image featured">
 <img src="http://ecologyofeducation.net/wsite/wp-content/uploads/2012/06/picard-588x448.jpg">
 </a>
 </div>  

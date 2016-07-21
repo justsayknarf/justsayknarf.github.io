@@ -2091,6 +2091,8 @@
 		font-size: 0.8em;
 		font-style: italic;
 		text-align: center;
+		margin: 0 0 1em 0;
+		width: 100%;
 	}
 
 	.image {
@@ -2125,7 +2127,7 @@
 
 		.image.fit {
 			display: block;
-			margin: 0 0 2em 0;
+			margin: 0 0 1em 0;
 			width: 100%;
 		}
 
