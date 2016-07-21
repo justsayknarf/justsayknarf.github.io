@@ -5,13 +5,14 @@ subtitle: "Why am I still playing?"
 date:  2016-07-18 21:03:17 -0800
 categories: [psychology, design]
 author: knarf
+excerpt_separator: <!--more-->
 ---
 <a class="image featured"><img src="https://i.ytimg.com/vi/YeKa2hzYUDg/maxresdefault.jpg"></a>
-So I recently came across a rant about Pokemon Go that was posted on Facebook. After spending such a long time writing down my thoughts celebrating the game in the last post, it made me want to respond directly to his rant. How could he hate on the actualization of such a cherished brand?  However, I refrained from replying (I let my other friends say what I wanted), and I reread the post.  While I realize the wording was largely negative (haters gonna hate), I realized that through all his points that he laid out he wasn't... wrong.
+So I recently came across a rant about Pokemon Go that was posted on Facebook. After spending such a long time writing down my thoughts celebrating the game in the last post, it made me want to respond directly to his rant. How could he hate on the actualization of such a cherished brand? I refrained from unleashing digital wrath (re: LOL how could you??), and I reread the post.  While I realize the wording was largely negative (haters gonna hate), I realized that for all the points that he laid out as to why the game was bad, he wasn't... wrong.
 
 Pokemon Go is, in its current state, objectively NOT a fully-designed game. Is this bad?
 
-<!--break-->
+<!--more-->
 
 The current design
 ==================
@@ -24,14 +25,16 @@ And the answer right now is pretty obvious: "I want to be the very best - that n
 
 Yes, the primary driving force right now for a player to play the game is to be the owner of all 150 (original) Pokemon in the digital/real world, to have all 150 Pokemon grace your phone with its presence, and allow itself to be caught by your superior Pokeball throwing (up-swiping) skills. You want to catch them all, and each random Pokemon encounter is another chance to fill in those empty Pokedex entries. 
 
-You can sort of use these Pokemon to take control of gyms, spending Pokemon candies and stardust to increase its Combat Power. 
+You then spend hard-earned Pokemon candies and stardust to increase its Combat Power to use these Pokemon to take control of gyms. 
 
-With increasing reports by players that the Combat Power (CP) scaling of a Pokemon being broken, with Pokemon types being completely imbalanced, and with the only ways to gain more candies and stardust is to catch... more Pokemon, players are starting to wonder if there's anything more to this game.
+Simple enough.
+
+But wait. On top of the technical server issues, players have reported that the Combat Power (CP) scaling of a Pokemon is completely broken, water type Pokemon being completely overpowered, and gym battles are a complete joke with no strategy involved at all.  And on top of that, the ONLY way to even gain more candies and stardust is to catch... more Pokemon. Players are starting to wonder if there's anything more to this game.
 
 How much longer will this game last?
 
-Skinner Box
-===========
+Skinner Box Mechanics: Mobile Games and Operant Conditioning
+==================================================
 
 As a quick aside, let's first take a look at the Skinner Box.
 
@@ -46,8 +49,6 @@ The Skinner box was a device that he had created to test his now-known theory. T
 <span class="image right image-caption"><img src="http://rationalwiki.org/w/images/thumb/5/59/Skinner_box.jpg/200px-Skinner_box.jpg">Halp.</span>
 
 Simply put, a pigeon would be put in a box with a button. The pigeon pecks the button. Food falls out. Skinner nods and scribbles some notes.
-
-
 
 Now, what makes this interesting are the variations of conditioning that he experimented with. He would try rewarding the behavior every time, try punishing other behaviors, try removing the reward, etc.  
 
@@ -65,8 +66,7 @@ Which reward schedule was that? The variation where the actions are rewarded aft
 
 Sound familiar? It should. What do you think slot machines are?
 
-Mobile Games and Operant Conditioning
-=====================================
+Skinner box mechanics are game mechanics that condition user playtime with some sort of reward schedule. RPGs are known for this, each battle providing XP to level up your character. 
 
 So here's the thing.  All games rely on some sort of reward system to keep a player engaged.  This is not the worst thing in the world. Players should always feel some sense of reward for playing the game, in some shape or form; otherwise, why play the game at all.  A game shouldn't feel like a chore.
 
@@ -84,7 +84,7 @@ If the game mechanic is fairly boring, the novelty keeps the player engaged for 
 
 Once people start questioning the conditioned behavior and whether it's worth the reward, the game needs more and more to keep that player engaged. 
 
-So for Pokemon Go, amidst all the technical issues, frustration is already building, and the novelty of the reward is already wearing off. But the game just came out? What's happening?
+So for Pokemon Go, amidst all the technical issues, frustration is already building, and the novelty of the reward is already wearing off. But didn't the game just come out? What's happening? Why does it ALREADY feel like a grind?
 
 
 Discovery + Novelty
@@ -124,13 +124,15 @@ For now, players will continue to blame the servers, but the clock is ticking fo
 What's the story, Wishbone? - Narrative
 =======================================
 
-Another big problem I see now is that the motivation to "catch them all" is not directly encouraged by the game itself. There are all these things to do, without even the weakest of stories to provide a reason why. There is practically NO narrative behind any of it. 
+Narrative provides a reason for players to pick up a controller and play a game. Some games' narratives are so immersive, the player immediately gets sucked into the world, and continues to play just to feel part of it. Others are relatively simple.
 
 Most mobile games don't need fully established narratives. You don't necessarily need a reason why these jewels need to be matched in 3s to make them disappear.  You don't necessarily NEED a reason why this bird is flapping through these pipes. But most games try to provide just enough context to make the game intersting anyway. 
 
 I mean, take a look at this story trailer of [Jetpack Joyride](https://www.youtube.com/watch?v=Jzxi8nid9BQ). 
 
 Story context or not, these games always provide a REASON to try and get the high score. Each time you die or finish a round, you SEE what your personal best is. You can see the high scores of people in your network, and you can see the high scores in the global leaderboards as well.  If you want to be recognized for your achievement, you better keep practicing. 
+
+Pokemon Go's main motivation to "catch them all" is never encouraged by the game itself. It's pretty much the only thing to do (besides take pictures with them), without even the weakest of stories to provide a reason why. There is practically NO narrative behind any of it. 
 
 Pokemon Go has seemingly forgotten about this aspect, or has assumed that the lore of Pokemon was enough to drive all gameplay. After your introduction to the professor, the professor is never seen again. After your arbitrary team allegiance, those team leaders ARE NEVER SEEN AGAIN (what were their names again?). 
 
@@ -142,9 +144,13 @@ Who are these guys?
 </div>
 </div>
 
-The lack of narrative was fine at first, when everything about the game was new, but may of the players are now hitting a stage where they need to simply grind out their Pokemon Go players. The only other characters of the game are the other Pokemon Go players.  But why are YOU, as a player, catching these Pokemon? Why are YOU taking over these gyms?  While at first I praised how the design of the game promoted some incredible new social elements in the real world, I'm starting to seriously think that Niantic was extremely lucky that the players themselves created a desperately needed narrative for themselves. 
+The lack of narrative was fine when everything about the game was new, but many players are now reaching a stage in the game where they need to simply grind for more Pokemon. 
 
-Luckily, narrative is incredibly easy to incrementally fix. It's a simple matter of presenting some simple information at key moments in the game.
+In most games, the grind is understood, the need to get stronger is reinforced by the story, by the next huge challenge ahead. This isn't true in Pokemon Go.  The only other characters of the game are the other Pokemon Go players. But why are YOU, as a player, catching these Pokemon? Why are YOU taking over these gyms? How can you even tell if you're the very best (that no one ever was)? 
+
+While at first I praised how the design of the game promoted some incredible new social dynamics in the real world, I'm starting to seriously think that Niantic was extremely lucky that the players themselves created a desperately needed narrative for themselves. 
+
+<span class="image right"><img src="http://www.mindtheproduct.com/wp-content/uploads/2013/08/narrative.jpg"></span>Luckily, narrative is relatively easy to fix. It's a simple matter of presenting some simple information at key moments in the game.
 
 If turf wars are to be encouraged, players only need to be reminded that the turf war exists.  Presenting a history of ownership in a gym can be a huge encouragement to fight or train at a gym. If you take down a gym, your name is etched in the RECORDS that you, Trainer192385, tore down the dirty Team Valor gym in the name of Team Instinct (only to have it taken back instantly).  Presenting players with a global Team leaderboard, breaking down Gym Ownership by teams across by nation, by state, by region. Have the Team Leaders (the cool characters that tried to recruit you in the team selection screen) come back and say a few words of encouragement when you take down a certain number of gyms.  Give players the RECOGNITION for the actions they are taking.
 
@@ -157,7 +163,7 @@ It's a FIRE SALE
 
 Niantic and Nintendo are fighting technical fires while seemingly lighting new ones before the first ones are even put out. Even as the servers are overloaded, other parts of the game continue to crash and glitch, and bugs continue to be reported.
 
-Pokemon Go is working with a limited amount of time now. The technical issues of the game are severly impacting the gameplay at its core.  Players are routinely PUNISHED for playing the game correctly, and each time it happens, each player's motivation to play the game is negatively impacted. Eventually, people WILL lose interest, and releasing new Pokemon might not be enough to capture the audience's interest.
+Pokemon Go has a limited lifespan now. The technical issues of the game are severly impacting the gameplay at its core, and as players are routinely PUNISHED for playing the game correctly, each player's motivation to play the game is negatively impacted. Eventually, people WILL lose interest, and even the appeal of new Pokemon might not be enough to capture the audience's interest.
 
 I have faith, though. I don't think Pokemon Go will ultimately fail.  I feel like I'll continually to monitor any news, to see if there have been any legendary bird sightings, any signs of Mew or Mewtwo.  
 
