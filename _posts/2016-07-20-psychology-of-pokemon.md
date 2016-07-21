@@ -170,3 +170,17 @@ I have faith, though. I don't think Pokemon Go will ultimately fail.  I feel lik
 I just think that Pokemon Go has a TON of potential, and I just really want the game to live up to it. 
 
 The clock is ticking, Niantic. 
+
+On the other hand... Some afterthoughts
+=======================================
+Niantic holds data that I clearly don't see.  Most of my analysis comes from approaching Pokemon Go as a game, so all my data comes from gaming design in the traditional sense. 
+
+Perhaps Pokemon Go is a new style of game that Niantic is trying to pioneer. Perhaps Pokemon Go is trying to be the first digital geocaching-type application, and doesn't quite qualify as a game in that sense. 
+
+It's quite possible that Google found out that people continued to look for all 150 Pokemon during the Google Maps April Fools game wayyyy longer than anyone predicted, and they KNEW that the brand itself had staying power beyond anyone else's imagination, and the decision to launch the game in its current state was completely strategical. 
+
+I may never know. 
+
+All I do know is that I'm still going to fire my app back up at my spot at the gym where 2 PokeStops overlap, and I'm definitely still going to stay tuned to any Pokemon events waiting to be revealed.  
+
+I still wanna be the very best, I guess.
