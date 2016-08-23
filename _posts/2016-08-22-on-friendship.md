@@ -94,9 +94,9 @@ In the past, in college dorms, in high school, on the street you grew up with, r
 
 When you're thrown into the post-college world, the game changes.  Your available socializing time is proportioned completely differently. Your day is focused on work; socializing is limited to your coworkers. You only have so much energy now that work is over. Gym? Friends? Dates? Career advancement?  Whatever it is, you are committing your night to, so it better be good. 
 
-The more choices you have, the better chances of a good night you'll have. If you secretly just want to stay home, at least you know you were asked to be somewhere. You just wanted the option to go out, after all.
+<a class="image right"><img src="https://scontent.cdninstagram.com/hphotos-xft1/t51.2885-15/e15/10986340_1577928492444695_2145623142_n.jpg"></a>
 
-<a class="image left"><img src="https://scontent.cdninstagram.com/hphotos-xft1/t51.2885-15/e15/10986340_1577928492444695_2145623142_n.jpg"></a>
+The more choices you have, the better chances of a good night you'll have. If you secretly just want to stay home, at least you know you were asked to be somewhere. You just wanted the option to go out, after all.
 
 If this sounds familiar to you at all, you should be able to see why friendships can be harder to maintain now. Time has become a scarcer resource.  New relationships are suddenly all Tier 3 relationships, but you're looking for Tier 1, and, understandibly, you're looking for loyalty.  
 
