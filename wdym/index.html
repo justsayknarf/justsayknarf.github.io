@@ -1,0 +1,277 @@
+
+<!doctype html>
+<html>
+
+	<head>
+
+		<meta charset="utf-8">
+		<title>#REPLACE_THIS Button</title>
+		<meta name="description" content="What do you mean?" />
+		<meta name="keywords" content="whatdoyoumean Button, Button, What do you mean" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1">
+
+		<meta property="og:title" content="#whatdoyoumean Button" />
+		<meta property="og:description" content="For when you don't know what someone means. Press the button to tell them." />
+		<meta property="og:type" content="website" />
+		<meta property="og:url" content="http://www.whatdoyoumeanbutton.com" />
+		<meta property="og:image" content="http://whatdoyoumeanbutton.com/assets/images/og-image.jpg" />
+		<meta property="og:site_name" content="whatdoyoumeanbutton.com" />
+
+		<link rel="shortcut icon" href="assets/images/favicon.png">
+		<link href='http://fonts.googleapis.com/css?family=Roboto:300,900' rel='stylesheet' type='text/css'>
+
+		<script type="text/javascript" src="assets/js/howler.js"></script>
+
+		<style>
+
+			body { margin: 0px; background: black; font-family: 'Roboto', sans-serif; font-weight: 300; font-size: 12px; color: #FFF; }
+
+			#container { position: absolute; left: 0px; top: 0px; width: 100%; height: 100%; min-height: 450px; min-width: 300px; }
+			body.embed #container { min-height: 0px; }
+			body.show-embed-code #container { min-height: 500px; }
+			
+			#link { display: none; position: absolute; left: 0px; bottom: 20px; width: 100%; width: 100%; text-align: center; color: #FFF; text-decoration: none; font-size: 16px; opacity: 0.7; }
+			body.embed #link { display: block; }
+
+			body {
+			    text-align: center;
+			}
+
+			.button {
+				position: absolute; left: 50%; top: 50%; width: 300px; height: 140px; margin-left: -150px; margin-top: -100px; -webkit-user-select: none; 
+			    display: inline-block;
+			    -webkit-border-radius: 8px;
+			    -moz-border-radius: 8px;
+			    border-radius: 8px;
+			    -webkit-box-shadow:    0 8px 0 #c5376d, 0 15px 20px rgba(0, 0, 0, .35);
+			    -moz-box-shadow: 0 8px 0 #c5376d, 0 15px 20px rgba(0, 0, 0, .35);
+			    box-shadow: 0 8px 0 #c5376d, 0 15px 20px rgba(0, 0, 0, .35);
+			    -webkit-transition: -webkit-box-shadow .1s ease-in-out;
+			    -moz-transition: -moz-box-shadow .1s ease-in-out;
+			    -o-transition: -o-box-shadow .1s ease-in-out;
+			    transition: box-shadow .1s ease-in-out;
+			    font-size: 50px;
+			    color: #fff;
+			    transition: margin 300ms;
+			}
+
+			.button span {
+			    display: inline-block;
+			    padding: 20px 30px;
+			    background-color: #ec528d;
+			    background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(hsla(338, 90%, 80%, .8)), to(hsla(338, 90%, 70%, .2)));
+			    background-image: -webkit-linear-gradient(hsla(338, 90%, 80%, .8), hsla(338, 90%, 70%, .2));
+			    background-image: -moz-linear-gradient(hsla(338, 90%, 80%, .8), hsla(338, 90%, 70%, .2));
+			    background-image: -o-linear-gradient(hsla(338, 90%, 80%, .8), hsla(338, 90%, 70%, .2));
+			    -webkit-border-radius: 8px;
+			    -moz-border-radius: 8px;
+			    border-radius: 8px;
+			    -webkit-box-shadow: inset 0 -1px 1px rgba(255, 255, 255, .15);
+			    -moz-box-shadow: inset 0 -1px 1px rgba(255, 255, 255, .15);
+			    box-shadow: inset 0 -1px 1px rgba(255, 255, 255, .15);
+			    font-family: 'Pacifico', Arial, sans-serif;
+			    line-height: 1;
+			    text-shadow: 0 -1px 1px rgba(175, 49, 95, .7);
+			    -webkit-transition: background-color .2s ease-in-out, -webkit-transform .1s ease-in-out;
+			    -moz-transition: background-color .2s ease-in-out, -moz-transform .1s ease-in-out;
+			    -o-transition: background-color .2s ease-in-out, -o-transform .1s ease-in-out;
+			    transition: background-color .2s ease-in-out, transform .1s ease-in-out;
+			}
+
+			.button:hover span {
+			    background-color: #ec6a9c;
+			    text-shadow: 0 -1px 1px rgba(175, 49, 95, .9), 0 0 5px rgba(255, 255, 255, .8);
+			}
+
+			.button:active, .button:focus {
+			    -webkit-box-shadow:    0 8px 0 #c5376d, 0 12px 10px rgba(0, 0, 0, .3);
+			    -moz-box-shadow: 0 8px 0 #c5376d, 0 12px 10px rgba(0, 0, 0, .3);
+			    box-shadow:    0 8px 0 #c5376d, 0 12px 10px rgba(0, 0, 0, .3);
+			}
+
+			.button:active span {
+			    -webkit-transform: translate(0, 4px);
+			    -moz-transform: translate(0, 4px);
+			    -o-transform: translate(0, 4px);
+			    transform: translate(0, 4px);
+			}
+
+			body.show-embed-code .button { margin-top: -150px; }
+
+			#embed-code { position: absolute; left: 50%; top: 50%; width: 300px; height: 0px; margin-left: -150px; margin-top: 100px; text-align: center; opacity: 0; overflow: hidden; transition: opacity 300ms, height 0s 300ms, margin 300ms; }
+			body.show-embed-code #embed-code { margin-top: 30px; height: auto; opacity: 1; transition: opacity 300ms, height 0s 0s, margin 300ms; }
+			#embed-code textarea { width: 280px; height: 100px; border: none; padding: 10px; margin-top: 10px; }
+
+			#share { position: absolute; left: 50%; bottom: 20px; width: 300px; margin-left: -150px; text-align: center; }
+			body.embed #share { display: none; }
+			#share .fb-share-button { position: relative; bottom: 3px; margin-right: 5px; margin-left: 25px; }
+			#share a { display: inline-block; color: #FFF; text-decoration: none; opacity: 0.7; margin-top: 5px; }
+
+			#lightbox { position: fixed; z-index: 200; left: 0px; top: 0px; width: 100%; height: 0%; opacity: 0; overflow: hidden; transition: opacity 300ms, height 0s 300ms; }
+			#lightbox.open { height: 100%; opacity: 1; transition: opacity 300ms, height 0s 0s; }
+			#lightbox .overlay { position: absolute; left: 0px; top: 0px; width: 100%; height: 100%; background: #000; opacity: 0.7; filter: alpha(opacity=70); }
+			#lightbox .inner { position: absolute; left: 0px; top: 50%; right: 0px; text-align: center; margin-top: 0px; padding: 0px 20px; transition: margin-top 1s; }
+			#lightbox.open .inner { margin-top: -200px; }
+			#lightbox .inner h1 { font-size: 24px; font-weight: 900; }
+			#lightbox .inner .close { display: inline-block; width: 30px; height: 30px; border: 1px solid #FFF; text-align: center; line-height: 28px; font-size: 24px; color: #FFF; text-decoration: none; border-radius: 50%; margin-top: 20px; transition: background 300ms, color 300ms; }
+			#lightbox .inner .close:hover { background: #FFF; color: #002381; }
+
+			.d { display: block; }
+			.m { display: none; }
+
+			@media(max-width: 600px) {
+
+				.d { display: none; }
+				.m { display: block; }
+
+				#share { top: 100%; bottom: auto; padding-bottom: 20px; }
+				#share .fb-share-button { bottom: 0px; margin-right: 0; margin-left: 5px; }
+				#share .twitter-share-button { margin-left: 40px; }
+
+				#share .divider, #share .embed { display: none; }
+
+			}
+
+		</style>
+
+	</head>
+
+	<body onload="initialize()" ontouchstart="">	
+
+
+		<div id="container">
+
+			<a href="http://www.REPLACE_THISbutton.com/" id="link" target="_blank">Go To REPLACE_THISButton.com</a>
+
+			<a class="button" href="#" onclick="return wdymPlay()">
+				<span>what do you mean.</span>
+			</a>
+
+			<div id="embed-code">
+				
+				Copy / paste the code below:
+
+				<textarea onclick="this.select()">&lt;iframe src=&quot;http://REPLACE_THISbutton.com/#embed&quot; width=&quot;350&quot; height=&quot;375&quot; frameborder=&quot;0&quot; scrolling=&quot;no&quot; style=&quot;display: block; margin: 50px auto;&quot;&gt;&lt;/iframe&gt;</textarea>
+
+			</div>
+
+			<div id="share">
+				
+				<div class="fb-share-button" data-href="http://www.whatdoyoumeanbutton.com" data-type="button_count"></div>
+				<br class="m" />
+				<a href="https://twitter.com/share" class="twitter-share-button" data-url="http://whatdoyoumeanbutton.com" data-counturl="www.whatdoyoumeanbutton.com" data-hashtags="whatdoyoumean" data-text="No seriously. What do you mean?">Tweet</a>
+				<br />
+				<a href="#" class="disclaimer" onclick="return openLightbox()">Disclaimer</a>
+				<span class="divider">&nbsp;|&nbsp;</span>
+				<a href="#" class="embed" onclick="return showEmbedCode()">Embed</a>
+
+			</div>
+
+			<div id="lightbox">
+				
+				<div class="overlay"></div>
+				<div class="inner">
+					<h1>REPLACE_THIS BUTTON</h1>
+					<p>
+						A blatent rip-off of the TDFW button, whichever came first app or website.<br class="d" /> <br class="d" />
+
+						I created this for entertainment purposes only and do not intend to infringe the copyrights of <br class="d" />
+						Justin Bieber, Def Jam or related entities, who are in no way affiliated with this site.<br class="d" />
+
+						Please don't sue me either.
+					</p>
+					<a href="#" class="close" onclick="return closeLightbox()">&times</a>
+				</div>
+
+			</div>
+
+		</div>
+
+
+		<script>
+
+			var
+				clip = new Howl({
+					urls: ['./assets/audio/wdym.mp3']
+				}),
+				lightbox	=	document.getElementById('lightbox')
+				embedCode	=	document.getElementById('embed-code')
+			;
+
+
+			function initialize() {
+
+				loadAsyncScript('//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.7');
+				loadAsyncScript('//platform.twitter.com/widgets.js');
+
+				if(document.location.hash == '#embed') {
+
+					document.body.className = 'embed';
+
+				}
+
+			}
+
+			
+			function wdymPlay(event){
+				clip.play();
+			}
+
+			function openLightbox() {
+
+				lightbox.className = 'open';
+
+				return false;
+
+			}
+
+			function closeLightbox() {
+
+				lightbox.className = '';
+
+				return false;
+
+			}
+
+			function showEmbedCode() {
+
+				document.body.className = 'show-embed-code';
+
+				return false;
+
+			}
+
+			function loadAsyncScript(source, callback) {
+		  	
+				var script = document.createElement('script');
+				if(arguments.length == 2) {
+
+					script.onload = callback;
+					ieOnScriptLoad(script, callback);
+
+				}
+				script.async = true;
+				script.src = source;
+				document.body.appendChild(script);
+
+			}
+
+			function ieOnScriptLoad(script, callback) {
+		        
+		        if(script.readyState == 'loaded' || script.readyState == 'completed') {
+		        
+		            callback();
+		        
+		        }else {
+		        
+		            setTimeout(function() { ieOnScriptLoad(script, callback); }, 100);
+		        
+		        }
+
+			 }
+
+		</script>
+
+	</body>
+
+</html>
