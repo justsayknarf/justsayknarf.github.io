@@ -3,7 +3,7 @@ layout: post
 title:  "Unsolicited Yelp analysis (part 1)"
 subtitle: "by a member of the Yelp Pleb"
 date:   2016-07-03 22:07:17 -0800
-categories: [product, featured]
+categories: [product]
 author: knarf
 excerpt_separator: <!--more-->
 featured: true
