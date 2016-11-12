@@ -3,7 +3,7 @@ layout: post
 title:  "Let's Talk Pokemon Go"
 subtitle: "Everyone wants to be the very best that no one ever was"
 date:  2016-07-13 22:33:17 -0800
-categories: design
+categories: [design, featured]
 author: knarf
 book: Name of the Wind
 excerpt_separator: <!--more-->
