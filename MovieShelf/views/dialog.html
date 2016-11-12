@@ -1,0 +1,22 @@
+<div class="overlay" ng-hide="hidden">
+<a ui-sref="main"> <i class="fa fa-close"></i></a>
+<div class="row">
+   <div class="col-lg-4 col-md-6 poster"> 
+      <img class="img-responsive center-block" ng-src="{{poster}}" height=280/>
+   </div>
+   <div class="col-lg-8 col-md-6 details"> 
+      <span class="title">{{title}}</span>  <span class="year">({{year}})</span>
+      <p class="tagline">{{tagline}}</p>
+      <hr>
+      <p class="overview">{{overview}}</p>
+      <hr>
+      <p class="releasedate">Release date: {{releasedate}}</p>
+      <p class="rating">Rating: {{rating}}</p>
+      <p class="genres">Genres: <span ng-repeat="g in genres"> {{g.name}} </span></p>
+      <p class="runtime">Runtime: {{runtime}} minutes</p>
+      <hr>
+      <p class="extLinks">Links: <a href="http://www.imdb.com/title/{{imdb}}">IMDB</a> | <a href="{{homepage}}">Official Website</a></p>
+      
+   </div>
+   </div>
+</div> 

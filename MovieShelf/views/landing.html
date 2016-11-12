@@ -1,0 +1,34 @@
+<div class="container center">
+   <h1> 
+      <span ng-class="{active : showComingSoon}" ng-click="toggleComingSoon()">Coming Soon </span> | 
+      <span ng-class="{active : !showComingSoon }" ng-click="togglePopular()">Popular Movies</span> 
+      
+   </h1> 
+   <div ng-show="showComingSoon"  class="row">
+      <div class="col-lg-3 col-md-6 col-sm-12" ng-repeat="movie in comingSoon">
+         <div class="row">
+            <a ui-sref=".details({id: movie.id})"><img class="img-responsive center-block" src={{movie.poster}}></a>
+         </div>
+         <div class="row">
+            <a href="#details/{{movie.id}}">{{movie.title}}</a>
+         </div>
+         
+      </div>
+   </div>
+
+   <div ng-hide="showComingSoon" class="row">
+      <div class="col-lg-3 col-md-6 col-sm-12" ng-repeat="movie in popMovies">
+         <div class="row">
+            <a ui-sref=".details({id: movie.id})"><img class="img-responsive center-block" src={{movie.poster}}></a>
+         </div>
+         <div class="row">
+            <a href="#details/{{movie.id}}">{{movie.title}}</a>
+         </div>
+         
+      </div>
+   </div>
+
+   
+</div>
+
+

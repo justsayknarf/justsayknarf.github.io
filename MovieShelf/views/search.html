@@ -1,0 +1,80 @@
+<div class="container"> 
+
+ <!-- search bar -->
+ <div class="row center search">
+    <div class="col-md-12">
+    <input id="searchfield" ng-model="search" ng-model-options="{ debounce: 500 }" placeholder="Search For A Movie" />
+    <i class="fa fa-search"></i>
+    </div>
+ </div>
+
+<!-- Details of first search result -->
+<!--          <div ng-show="search" class="row movieblock">
+    <div class="col-lg-4 col-md-6 poster"> 
+       <img class="img-responsive center-block" ng-src="{{poster}}" height=280/>
+    </div>
+    <div class="col-lg-8 col-md-6 details"> 
+       <span class="title">{{title}}</span> <span class="year">{{year}}</span>
+       
+       <p class="overview">{{overview}}</p>
+       <hr>
+       <p class="rating">{{rating}}</p>
+       <hr>
+       <a href="#details/{{id}}" class="details">More Details</a>
+    </div>
+  
+  </div>  -->
+  <!-- end movie poster first search result -->
+  
+  <!-- Search Results nav -->
+  <div class="row nav">
+    <div class="col-sm-12">
+     <span ng-class="{active : !showList}" ng-click="toggleGrid()">Grid View</span> |
+     <span ng-class="{active : showList}" ng-click="toggleList()">List View</span>  
+     
+     </div>
+  </div>
+
+  <!-- search result table -->
+  <div ng-show="showList" class="row">
+    <div class="col-sm-12">
+       <table class="table table-bordered table-striped">
+          <thead>
+             <tr>
+                <td>
+                   <a ng-click="sortType = 'title'; sortReverse = !sortReverse">Title <span ng-show="sortType == 'title'" class="fa fa-caret-down"></span>
+                   </a>
+                </td>
+                <td>
+                   <a ng-click="sortType = 'rating'; sortReverse = !sortReverse">Rating  <span ng-show="sortType == 'rating'" class="fa fa-caret-down"></span></a>
+                </td>
+                <td>
+                   <a ng-click="sortType = 'date'; sortReverse = !sortReverse">Release Date <span ng-show="sortType == 'date'" class="fa fa-caret-down"></span></a>
+                </td>
+             </tr>
+       </thead>
+       <tbody>
+          <tr ng-repeat="m in searchResults | orderBy:sortType:sortReverse">
+             <td><a ui-sref=".details({id: m.id})">{{ m.title }}</a></td>
+             <td>{{ m.rating }}</td>
+             <td>{{ m.date }}</td>
+          </tr>
+       </tbody> 
+    </table> 
+    </div>
+ </div>
+ <!-- end search result table -->
+
+ <!-- search result poster grid -->
+ <div ng-hide="showList" class="row gridcontainer">
+    <div class="poster col-lg-3 col-md-6 col-sm-12" ng-repeat="m in searchResults">
+       <div class="row">
+          <a ui-sref=".details({id: m.id})">
+          <img class="img-responsive center-block" ng-src="{{m.poster}}" /></a>
+       </div>
+    </div>
+ </div>
+
+
+</div>
+<!-- end of container -->
