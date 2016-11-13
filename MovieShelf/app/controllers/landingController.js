@@ -30,7 +30,7 @@ app.controller('landingController',
           console.log("config:" , resp)
         });
 
-        $scope.showComingSoon = true;
+        $scope.showComingSoon = false;
         var curDate = new Date();
         var flag = true;
         curDate = curDate.toISOString().slice(0,10);
@@ -58,7 +58,8 @@ app.controller('landingController',
             id: searchResults[i].id,
             title: searchResults[i].original_title,
             overview: searchResults[i].overview,
-            poster: imgbase + searchResults[i].poster_path
+            poster: imgbase + searchResults[i].poster_path,
+            release: searchResults[i].release_date
           }
 
           if(Date.parse(resp.data.results[i].release_date) > Date.parse(new Date()))

@@ -1,5 +1,7 @@
-<div class="overlay" ng-hide="hidden">
-<a ui-sref="main"> <i class="fa fa-close"></i></a>
+<!-- <div class="overlay"> -->
+<div class="overlaycontainer">
+<!-- <a ui-sref="main"> <i class="fa fa-close"></i></a> -->
+<a ui-sref="main">&lt;&lt;Back</a>
 <div class="row">
    <div class="col-lg-4 col-md-6 poster"> 
       <img class="img-responsive center-block" ng-src="{{poster}}" height=280/>
@@ -9,6 +11,18 @@
       <p class="tagline">{{tagline}}</p>
       <hr>
       <p class="overview">{{overview}}</p>
+      <hr>
+      <div class='row'>
+         <div class='col-lg-3 col-md-4 col-sm-6' ng-repeat='c in cast'> 
+            <div class='row'><img class="img-responsive center-block" src={{c.image}}></div>
+         </div>
+      </div>
+      <div class='row'>
+         <div class='col-lg-3 col-md-4 col-sm-6' ng-repeat='c in cast'> 
+            <div class='row castname'>{{c.name}}</div>
+         </div>
+      </div>
+
       <hr>
       <p class="releasedate">Release date: {{releasedate}}</p>
       <p class="rating">Rating: {{rating}}</p>

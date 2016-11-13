@@ -25,6 +25,7 @@ app.controller('searchController',
     function init() {
       page = 1;
       $scope.search = "";
+      $scope.searching = false;
       $scope.showList = false;
 
       // display latest movies in search results
@@ -39,12 +40,18 @@ app.controller('searchController',
     function fetch(){
       $scope.search = $("#searchfield").val();
 
-      if ($scope.search.length > 0)
-      //this query allows users to search by title which is input by the user
-      movieService.searchMovies($scope.search)
-        .then( parseData );
-    }
+      if ($scope.search === "") {
+        $scope.searching = false;
+        movieService.getInTheaters().then(parseData);
+      } else {
+        $scope.searching = true;
+        movieService.searchMovies($scope.search)
+          .then( parseData );
 
+      }
+
+      
+    }
 
     function parseData(resp) {
       $scope.searchResults = [];
@@ -56,10 +63,10 @@ app.controller('searchController',
 
       for (var i=0; i<resp.data.results.length; i++) {
         var poster = '';
-        if (resp.data.results[i].poster_path) 
-          poster = imgPath + resp.data.results[i].poster_path;
-        else 
+        if (resp.data.results[i].poster_path === null) 
           poster = placeholder;
+        else 
+          poster = imgPath + resp.data.results[i].poster_path;
 
         var obj = {
           id : resp.data.results[i].id,

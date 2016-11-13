@@ -25,16 +25,18 @@
   
   </div>  -->
   <!-- end movie poster first search result -->
-  
+  <hr>
   <!-- Search Results nav -->
   <div class="row nav">
-    <div class="col-sm-12">
+    <div class="col-sm-12 col-lg-12">
      <span ng-class="{active : !showList}" ng-click="toggleGrid()">Grid View</span> |
-     <span ng-class="{active : showList}" ng-click="toggleList()">List View</span>  
-     
-     </div>
+     <span ng-class="{active : showList}" ng-click="toggleList()">List View</span>    
+    </div>
   </div>
-
+    <div class="row"> 
+      <span ng-hide="searching"><h1 class="tablelabel">In Theaters Now</h1></span>
+      <span ng-show="searching"><h1 class="tablelabel">Search Results</h1></span>
+    </div>
   <!-- search result table -->
   <div ng-show="showList" class="row">
     <div class="col-sm-12">
@@ -55,7 +57,7 @@
        </thead>
        <tbody>
           <tr ng-repeat="m in searchResults | orderBy:sortType:sortReverse">
-             <td><a ui-sref=".details({id: m.id})">{{ m.title }}</a></td>
+             <td><a ui-sref="details({id: m.id})">{{ m.title }}</a></td>
              <td>{{ m.rating }}</td>
              <td>{{ m.date }}</td>
           </tr>
@@ -69,7 +71,7 @@
  <div ng-hide="showList" class="row gridcontainer">
     <div class="poster col-lg-3 col-md-6 col-sm-12" ng-repeat="m in searchResults">
        <div class="row">
-          <a ui-sref=".details({id: m.id})">
+          <a ui-sref="details({id: m.id})">
           <img class="img-responsive center-block" ng-src="{{m.poster}}" /></a>
        </div>
     </div>

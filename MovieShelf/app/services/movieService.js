@@ -8,16 +8,11 @@ app.factory('movieService', ['$http', 'API_KEY', 'BASE_URL', function($http, API
 	};
 
 	factory.getComingSoon = function(curDate) {
-  	return $http.get(BASE_URL + '/discover/movie?api_key=' + API_KEY + '&primary_release_date.gte='+curDate);
+  	return $http.get(BASE_URL + '/movie/upcoming?api_key=' + API_KEY);
 	};
 
   factory.getInTheaters = function() {
-    var curDate = new Date();
-    var past = new Date();
-    past.setDate(curDate.getDate() - 30);  
-    past = past.toISOString().slice(0,10);
-    curDate = curDate.toISOString().slice(0,10);
-    return $http.get(BASE_URL + '/discover/movie?api_key=' + API_KEY + '&primary_release_date.gte='+ past + '&primary_release_date.lte='+curDate);
+    return $http.get(BASE_URL + '/movie/now_playing?api_key=' + API_KEY);
   };
 
 	factory.searchMovies = function(query, page) {
@@ -35,7 +30,7 @@ app.factory('movieService', ['$http', 'API_KEY', 'BASE_URL', function($http, API
 
   factory.getMovieDetails = function(id) {
     https://api.themoviedb.org/3/movie/284052?api_key=87de9079e74c828116acce677f6f255b&language=en-US&
-    return $http.get(BASE_URL + '/movie/' + id + '?api_key=' + API_KEY + '&language=en-US');
+    return $http.get(BASE_URL + '/movie/' + id + '?api_key=' + API_KEY + '&language=en-US&append_to_response=videos,credits,recommendations');
     // https://api.themoviedb.org/3/movie/{movie_id}?api_key=<<api_key>>&language=en-US&append_to_response=undefined
   }
 
