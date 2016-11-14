@@ -27,6 +27,7 @@ app.controller('searchController',
       $scope.search = "";
       $scope.searching = false;
       $scope.showList = false;
+      $scope.searchfocus = false;
 
       // display latest movies in search results
       movieService.getInTheaters().then(

@@ -21,9 +21,24 @@ app.config( function($stateProvider, $urlRouterProvider){
         }
     })
 
+    // .state('details', {
+    //     url: "/details/:id",
+    //     templateUrl: 'views/dialog.html',
+    //     controller: 'detailsController',
+    // })
+
     .state('details', {
         url: "/details/:id",
-        templateUrl: 'views/dialog.html',
-        controller: 'detailsController'
+        views: {
+          '': { 
+            templateUrl: 'views/dialog.html',
+            controller: 'detailsController'
+          },
+          'search@details': {
+            templateUrl: 'views/search.html',
+            controller: 'searchController'
+          }
+        }
     })
+
 });
