@@ -16,6 +16,7 @@ app.controller('detailsController',
     init();
 
     function init() {
+      $scope.limit = 4;
       $scope.hidden = false;
       $scope.id = $stateParams.id;
 
@@ -29,7 +30,7 @@ app.controller('detailsController',
 
         $scope.cast = [];
 
-        for(var i=0; i<resp.data.credits.cast.length && i<4; i++) {
+        for(var i=0; i<resp.data.credits.cast.length; i++) {
           if (resp.data.credits.cast[i].profile_path === null) {
             profile = placeholderprofile;
           } else profile = profilePath + resp.data.credits.cast[i].profile_path;

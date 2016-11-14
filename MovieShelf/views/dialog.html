@@ -3,34 +3,38 @@
 <!-- <a ui-sref="main"> <i class="fa fa-close"></i></a> -->
 <a ui-sref="main">&lt;&lt;Back</a>
 <div class="row">
-   <div class="col-lg-4 col-md-6 poster"> 
-      <img class="img-responsive center-block" ng-src="{{poster}}" height=280/>
+   <div class="col-lg-4 col-md-6 col-sm-12 section"> 
+      <div class="row">
+         <img class="img-responsive center-block" ng-src="{{poster}}" height=280/>
+      </div>
+      <div class="row">
+         <p class="extLinks"><a href="http://www.imdb.com/title/{{imdb}}">IMDB</a> | <a href="{{homepage}}">Official Website</a></p>
+      </div>
    </div>
-   <div class="col-lg-8 col-md-6 details"> 
+
+   <div class="col-lg-8 col-md-6 col-sm-12 section"> 
       <span class="title">{{title}}</span>  <span class="year">({{year}})</span>
       <p class="tagline">{{tagline}}</p>
       <hr>
       <p class="overview">{{overview}}</p>
       <hr>
       <div class='row'>
-         <div class='col-lg-3 col-md-4 col-sm-6' ng-repeat='c in cast'> 
-            <div class='row'><img class="img-responsive center-block" src={{c.image}}></div>
-         </div>
-      </div>
-      <div class='row'>
-         <div class='col-lg-3 col-md-4 col-sm-6' ng-repeat='c in cast'> 
+         <div class='col-lg-3 col-md-4 col-sm-6 castContainer' ng-repeat='c in cast | limitTo: limit as results'> 
+            <div class='row' ><img class="img-responsive center-block" src={{c.image}}></div>
             <div class='row castname'>{{c.name}}</div>
          </div>
       </div>
+      <div class="row" style="text-align:right">
+      <a ng-hide="results.length === cast.length" ng-click="limit=limit+4">show more...</a>
+      </div>
 
       <hr>
+      <div class="row">
       <p class="releasedate">Release date: {{releasedate}}</p>
       <p class="rating">Rating: {{rating}}</p>
       <p class="genres">Genres: <span ng-repeat="g in genres"> {{g.name}} </span></p>
       <p class="runtime">Runtime: {{runtime}} minutes</p>
-      <hr>
-      <p class="extLinks">Links: <a href="http://www.imdb.com/title/{{imdb}}">IMDB</a> | <a href="{{homepage}}">Official Website</a></p>
-      
+      </div>
    </div>
    </div>
 </div> 
