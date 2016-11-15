@@ -6,7 +6,6 @@ date:   2016-07-03 22:07:17 -0800
 categories: [product]
 author: knarf
 excerpt_separator: <!--more-->
-featured: true
 ---
 
 I currently live in San Francisco, one of the most diverse cities, and a city that celebrates its food offerings and California-fusion, farm-to-table, organic, free-range, vegan, hidden-gem restaurants. 
