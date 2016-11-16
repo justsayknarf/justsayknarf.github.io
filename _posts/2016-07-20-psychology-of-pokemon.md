@@ -6,6 +6,7 @@ date:  2016-07-18 21:03:17 -0800
 categories: [psychology, design]
 author: knarf
 excerpt_separator: <!--more-->
+featured: true
 ---
 <a class="image featured"><img src="https://i.ytimg.com/vi/YeKa2hzYUDg/maxresdefault.jpg"></a>
 So I recently came across a rant about Pokemon Go that was posted on Facebook. After spending such a long time writing down my thoughts celebrating the game in the last post, it made me want to respond directly to his rant. How could he hate on the actualization of such a cherished brand? I refrained from unleashing digital wrath (re: LOL how could you??), and I reread the post.  While I realize the wording was largely negative (haters gonna hate), I realized that for all the points that he laid out as to why the game was bad, he wasn't... wrong.
