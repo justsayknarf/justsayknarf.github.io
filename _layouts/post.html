@@ -2,27 +2,39 @@
 layout: default
 ---
 
-<article class="post">
-	<header>
-		<div class="title">
-			<h2><a href="#">{{ page.title }}</a></h2>
-			<p>{{ page.subtitle }}</p>
-		</div>
-		<div class="meta">
-			<time class="published" datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%b %-d, %Y" }}</time>
-			{% if page.author %}
-			<a href="#" class="author"><span class="name">{{ page.author }}</span><img src="/images/avatar.jpg" alt="" /></a>
-			{% endif %}
-		</div>
-	</header>
 
-	<!-- post content -->
-		{{ content | replace: '<!--break-->', '<a class="anchor" id="read-more"></a>'}}
+<section class="post">
+  <div class="flex-row-between">
+	  <a href="{{ site.url }}{{ site.baseurl }}/">« back</a>
+    <button title="Change theme" id="theme-toggle" onclick="modeSwitcher()">
+      <div></div>
+    </button>
+  </div>
+  {% assign minute=content | number_of_words | divided_by: 265 | plus: 1 %}
+  <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%b %-d, %Y" }} -
+    {% if page.minute %} {{ page.minute }} {% else %} {{ minute }} {% endif %}min read</time>
+  <h1 class="title">{{ page.title }}</h1>
+  <span class="meta">
+    {% for tag in page.tags %}
+    <a href="{{ site.url }}{{ site.baseurl }}/tag/{{tag}}">{{tag}}</a>{% unless forloop.last %}, {% endunless %}{% endfor %}</span>
+  {{ content }}
+</section>
 
-	<footer>
-		<ul class="stats">
-			<li>Currently Reading: {{ page.book }}</li>
-			<li><a href="#">{{ page.categories }}</a></li>
-		</ul>
-	</footer>
-</article>
+<section>
+
+  <nav class="post-nav">
+    {% if page.previous %}
+    <a class="post-nav-item post-nav-prev" href="{{ page.previous | relative_url }}">
+      <div class="nav-arrow">Previous</div>
+      <span class="post-title">{{ page.previous.title }}</span>
+    </a>
+    {% endif %} {% if page.next %}
+    <a class="post-nav-item post-nav-next" href="{{ page.next | relative_url }}">
+      <div class="nav-arrow">Next</div>
+      <span class="post-title">{{ page.next.title }}</span>
+    </a>
+    {% endif %}
+
+  </nav>
+</section>
+{% include disqus.html %}

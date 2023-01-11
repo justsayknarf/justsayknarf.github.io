@@ -1,3 +1,10 @@
-_site
+tmp
+*.rdb
+.env
 .sass-cache
-.jekyll-metadata
+.DS_Store
+_site
+.jekyll-cache
+.git
+.vscode
+.obsidian
