@@ -1,0 +1,28 @@
+---
+layout: default
+---
+
+<article class="post">
+	<header>
+		<div class="title">
+			<h2><a href="#">{{ page.title }}</a></h2>
+			<p>{{ page.subtitle }}</p>
+		</div>
+		<div class="meta">
+			<time class="published" datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%b %-d, %Y" }}</time>
+			{% if page.author %}
+			<a href="#" class="author"><span class="name">{{ page.author }}</span><img src="/images/avatar.jpg" alt="" /></a>
+			{% endif %}
+		</div>
+	</header>
+
+	<!-- post content -->
+		{{ content | replace: '<!--break-->', '<a class="anchor" id="read-more"></a>'}}
+
+	<footer>
+		<ul class="stats">
+			<li>Currently Reading: {{ page.book }}</li>
+			<li><a href="#">{{ page.categories }}</a></li>
+		</ul>
+	</footer>
+</article>

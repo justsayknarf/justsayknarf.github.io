@@ -1,6 +1,6 @@
 # site:
 title: The Huge Manatee
-greetings: Hello 👋? Yes, this is Frank.
+greetings: Hi 👋. This is Frank.
 description: >-
   just a minimalist, personal place on the internet to hold some thoughts
 lang: en-US
@@ -31,28 +31,62 @@ permalink: pretty
 # url: "http://localhost:4000" #
 # baseurl: "" #
 
-# Site settings
-gems: [jekyll-paginate]
 
-title: The Huge Manatee
-email: frank.kb.yang@gmail.com
-description: > # this means to ignore newlines until "baseurl:"
-   A place for armchair philosophy, life, and other musings.
-baseurl: "/" # the subpath of your site, e.g. /blog
-assetsurl: "/assets"
-imagesurl: "/images"
-url: "http://justsayknarf.github.com" # the base hostname & protocol for your site
-twitter_username:
-github_username:
-
-# Build settings
 markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
 
-# Read More separator.
-# excerpt_separator: <!--break–->
 
-# blog permalinks. main pages should overwrite this.
-permalink: /blog/:year/:month/:day/:title/
+exclude:
+  - .jekyll-cache
+  - .obsidian
+  - Gemfile
+  - Gemfile.lock
+  - LICENSE.md
+  - README.md
+  - CONTRIBUTING.md
 
-paginate: 5
-paginate_path: "/blog/page:num/"
+compress_html:
+  clippings: all
+  comments: ["<!-- ", " -->"]
+
+sass:
+  sass_dir: _sass
+  style: compressed
+
+plugins:
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-relative-links
+
+collections:
+  pages:
+    output: true
+    permalink: /:name
+  posts:
+    output: true
+    permalink: /:year/:month/:day/:slug
+
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      layout: "default"
+  -
+    scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "page"
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+
+relative_links:
+  enabled:     true
+  collections: false
