@@ -1,32 +1,92 @@
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely need to edit after that.
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'jekyll serve'. If you change this file, please restart the server process.
-
-# Site settings
-gems: [jekyll-paginate]
-
+# site:
 title: The Huge Manatee
-email: frank.kb.yang@gmail.com
-description: > # this means to ignore newlines until "baseurl:"
-   A place for armchair philosophy, life, and other musings. 
-baseurl: "/" # the subpath of your site, e.g. /blog
-assetsurl: "/assets"
-imagesurl: "/images"
-url: "http://justsayknarf.github.com" # the base hostname & protocol for your site
-twitter_username: 
-github_username:  
+greetings: Hi 👋. This is Frank.
+description: >-
+  just a minimalist, personal place on the internet to hold some thoughts
+lang: en-US
+timezone:  America/Los_Angeles
+repo: https://github.com/justsayknarf/justsayknarf.github.io # site repo [optional]
+data-theme: dark # default theme "dark" | "light"
+# discus-identifier: powex # replace with your disqus shortname
 
-# Build settings
+author:
+  name: frankkbyang
+  bio: just a minimalist, personal place on the internet to hold some thoughts
+  userpicture:
+  username: # general username
+  github: # github username
+  twitter: # twitter username
+  email: frank.kb.yang@email.com # email adress
+
+# Font Settings
+googlewebfonts: family=Play:wght@400;700&family=Source+Code+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,300;1,400;1,500;1,600;1,700;1,900
+
+# URL settings
+url: "https://justsayknarf.github.io" # Domain Name of host. [username].github.io for github pages
+# url: "http://127.0.0.1:4000/" # Domain Name of host. [username].github.io for github pages
+baseurl: "" # sub folder for jekyll site. only if jekyll site not in root of host. leave blank if not wishd. always add / in front.
+permalink: pretty
+
+# local
+# url: "http://localhost:4000" #
+# baseurl: "" #
+
+
 markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
 
-# Read More separator.
-# excerpt_separator: <!--break–->
 
-# blog permalinks. main pages should overwrite this.
-permalink: /blog/:year/:month/:day/:title/
+exclude:
+  - .jekyll-cache
+  - .obsidian
+  - Gemfile
+  - Gemfile.lock
+  - LICENSE.md
+  - README.md
+  - CONTRIBUTING.md
 
-paginate: 5
-paginate_path: "/blog/page:num/"
+compress_html:
+  clippings: all
+  comments: ["<!-- ", " -->"]
+
+sass:
+  sass_dir: _sass
+  style: compressed
+
+plugins:
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-relative-links
+
+collections:
+  pages:
+    output: true
+    permalink: /:name
+  posts:
+    output: true
+    permalink: /:year/:month/:day/:slug
+
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      layout: "default"
+  -
+    scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "page"
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+
+relative_links:
+  enabled:     true
+  collections: false
