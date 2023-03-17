@@ -5,7 +5,7 @@
   <link rel="stylesheet" href="{{ site.url }}{{ site.baseurl }}/assets/css/syntax.css">
   <link rel="preconnect" href="https://cdnjs.cloudflare.com">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
+  
   <title>
       {% if page.tag or page.title %}
         {% if page.tag %}
@@ -24,7 +24,15 @@
       {% endunless %}
     </title>
   
-  
+    <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async=""></script>
+    <script>
+      window.OneSignal = window.OneSignal || [];
+      OneSignal.push(function() {
+        OneSignal.init({
+          appId: "32524081-a7e0-4fc0-ac4e-8bb70f13862c",
+        });
+      });
+    </script>
 
   
     <link rel="shortcut icon" href="{{ site.url }}{{ site.baseurl }}/favicon.png">
