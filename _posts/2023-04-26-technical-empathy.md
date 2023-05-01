@@ -15,14 +15,13 @@ But that being said, now, more than ever, I believe we live in a culture that co
 
 And at its worst, it feeds into a subconcious belief that you will not be heard unless that attention is demanded. 
 
-"""
-There’s a lot of talk in this country about the federal deficit.  But I think we should talk more about our empathy deficit – the ability to put ourselves in someone else’s shoes; to see the world through those who are different from us – the child who’s hungry, the laid-off steelworker, the immigrant woman cleaning your dorm room.
 
-As you go on in life, cultivating this quality of empathy will become harder, not easier.  There’s no community service requirement in the real world; no one forcing you to care.  You’ll be free to live in neighborhoods with people who are exactly like yourself, and send your kids to the same schools, and narrow your concerns to what’s going in your own little circle. 
-
-Not only that – we live in a culture that discourages empathy.  A culture that too often tells us our principal goal in life is to be rich, thin, young, famous, safe, and entertained.  A culture where those in power too often encourage these selfish impulses.
-"""
--President Obama in his [2006 Northwestern Commencement Speech](https://www.youtube.com/watch?v=2MhMRYQ9Ez8)
+>There’s a lot of talk in this country about the federal deficit.  But I think we should talk more about our empathy deficit – the ability to put ourselves in someone else’s shoes; to see the world through those who are different from us – the child who’s hungry, the laid-off steelworker, the immigrant woman cleaning your dorm room.
+>
+>As you go on in life, cultivating this quality of empathy will become harder, not easier.  There’s no community service requirement in the real world; no one forcing you to care.  You’ll be free to live in neighborhoods with people who are exactly like yourself, and send your kids to the same schools, and narrow your concerns to what’s going in your own little circle. 
+>
+>Not only that – we live in a culture that discourages empathy.  A culture that too often tells us our principal goal in life is to be rich, thin, young, famous, safe, and entertained.  A culture where those in power too often encourage these selfish impulses.
+> -President Obama in his [2006 Northwestern Commencement Speech](https://www.youtube.com/watch?v=2MhMRYQ9Ez8)
 
 # Some types of empathy
 
