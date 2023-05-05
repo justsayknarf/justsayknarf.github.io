@@ -41,6 +41,8 @@ Some games introduce complexity without overwhelming the user. They allow player
 
 To address this, you can disguise learning and mastery by making it a natural part of the product experience. For example, tooltips that teach new features as users hover over them, or product updates that introduce new features gradually over time, can help users learn without feeling overwhelmed.
 
+Willingness to learn new concepts and features will increase over time... as the user's investment in the product itself increases. Onboarding workflows are designed to reward and derive value from the product ASAP. Smoothing out the learning curve over time still takes some careful design. 
+
 ## 3. Borrow and steal design patterns 
 Games and other products often use design patterns that have been proven to work well. By borrowing these patterns and adapting them to your product, you can create a familiar and intuitive user experience.
 
