@@ -1,54 +1,22 @@
 ---
 layout: default
+title: Musings
 ---
 
-<div id="main">
-  {% for post in paginator.posts %}
-  <article class="post">
-    <header>
-      <div class="title">
-        <h2><a href="{{ post.url | prepend: site.baseurl | prepend: site.url }}">{{ post.title }}</a></h2>
-        <p>{{ post.subtitle }}</p>
-      </div>
-      <div class="meta">
-        <time class="published" datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%b %-d, %Y" }}</time>
-        {% if post.author %}
-        <a href="#" class="author"><span class="name">{{ post.author }}</span><img src="/images/avatar.jpg" alt="" /></a>
-        {% endif %}
-      </div>
-    </header>
-
-    {{ post.excerpt }}
-
-    <footer>
-      <ul class="actions">
-        <li><a href="{{ post.url }}#readmore" class="button big">Continue Reading</a></li>
-      </ul>
-      <ul class="stats">
-      {% if post.book %}
-        <li>Currently Reading: {{ post.book }}</li>
-      {% endif %}
-        <li><a href="#">{{ post.categories }}</a></li>
-
-      </ul>
-    </footer>
-  </article>
-
-  {% endfor %}
-
-  <!-- Pagination links -->
-<ul class="actions pagination">
-    {% if paginator.previous_page %}
-      <li><a href="{{ paginator.previous_page_path }}" class="button big previous">Previous Page</a></li>
-    {% else %}
-      <li><a href="{{ paginator.previous_page_path }}" class="disabled button big previous">Previous Page</a></li>
-    {% endif %}
-
-    {% if paginator.next_page %}
-      <li><a href="{{ paginator.next_page_path }}" class="button big next">Next Page</a></li>
-    {% else %}
-      <li><a href="{{ paginator.next_page_path }}" class="disabled button big next">Next Page</a></li>
-    {% endif %}
-</ul>
-
-</div>
+<section class="posts">
+  <div class="flex-row-between">
+    <a href="{{ '/' | relative_url }}">« Home</a>
+    <button title="Change theme" id="theme-toggle" onclick="modeSwitcher()">
+      <div></div>
+    </button>
+  </div>
+  <h2>MUSINGS</h2>
+  <ul>
+    {% for post in site.posts %}
+    <li>
+      <a href="{{ site.url }}{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+      <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%b %-d, %Y" }}</time>
+    </li>
+    {% endfor %}
+  </ul>
+</section>
