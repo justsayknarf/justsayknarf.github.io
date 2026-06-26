@@ -424,6 +424,10 @@ main {
 	flex-direction: column;
 }
 
+body.wide main {
+	max-width: 80rem;
+}
+
 
 .flex-row-between {
 	display: flex;
