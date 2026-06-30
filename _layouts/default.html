@@ -28,6 +28,11 @@ layout: compress
       <li><a href="{{ '/photos/' | relative_url }}">Memories</a></li>
     </ul>
     <div class="home-rail-bottom">
+      <div class="social-footer-icons">
+        <a href="https://github.com/justsayknarf" title="Github profile" target="_blank" rel="noopener noreferrer"><i class="fa fa-github" aria-hidden="true"></i></a>
+        <a href="{{ '/atom.xml' | relative_url }}" title="Feed RSS" target="_blank" rel="noopener noreferrer"><i class="fa fa-rss" aria-hidden="true"></i></a>
+        <a href="https://github.com/justsayknarf/justsayknarf.github.io" title="Browse the code" target="_blank" rel="noopener noreferrer"><i class="fa fa-code" aria-hidden="true"></i></a>
+      </div>
       <button title="Change theme" id="theme-toggle" onclick="modeSwitcher()">
         <div></div>
       </button>
@@ -87,13 +92,5 @@ layout: compress
   {% endif %}
 
 </body>
-
-<footer class="social-footer">
-  <div class="social-footer-icons">
-    <a href="https://github.com/frankkbyang" title="Github profile" target="_blank" rel="noopener noreferrer"><i class="fa fa-github" aria-hidden="true"></i></a>
-    <a href="{{ '/atom.xml' | relative_url }}" title="Feed RSS" target="_blank" rel="noopener noreferrer"><i class="fa fa-rss" aria-hidden="true"></i></a>
-    <a href="https://github.com/frankkbyang/frankkbyang.github.io" title="Browse the code" target="_blank" rel="noopener noreferrer"><i class="fa fa-code" aria-hidden="true"></i></a>
-  </div>
-</footer>
 
 </html>
