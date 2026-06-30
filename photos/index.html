@@ -4,13 +4,7 @@ title: Photos
 body_class: wide
 ---
 <section>
-  <div class="flex-row-between">
-    <a href="{{ '/' | relative_url }}">« Home</a>
-    <button title="Change theme" id="theme-toggle" onclick="modeSwitcher()">
-      <div></div>
-    </button>
-  </div>
-  <div class="gallery-split">
+<div class="gallery-split">
     <div class="gallery-thumbs">
       <img class="active" src="/images/fotos/1_thumb.jpg" data-lg="/images/fotos/1_lg.jpg" data-title="Tonsai Beach // Thailand" alt="Tonsai Beach // Thailand">
       <img src="/images/fotos/2_thumb.jpg" data-lg="/images/fotos/2_lg.jpg" data-title="Inle Lake // Myanmar (Burma)" alt="Inle Lake // Myanmar (Burma)">
@@ -30,7 +24,7 @@ body_class: wide
       <figcaption id="gallery-caption">Tonsai Beach // Thailand</figcaption>
     </div>
   </div>
-  <p>Check out more photos on my <a href="https://www.flickr.com/photos/justsayknarf">flickr</a>!</p>
+  <p style="font-size:0.8rem; color: var(--medium-text-color); margin-top: 1.5rem;">More photos on <a href="https://www.flickr.com/photos/justsayknarf">flickr</a>.</p>
 </section>
 
 <script>

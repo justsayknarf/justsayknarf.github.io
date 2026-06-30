@@ -2,7 +2,7 @@
 title: The Huge Manatee
 greetings: Hi 👋. This is Frank.
 description: >-
-  just a minimalist, personal place on the internet to hold some thoughts
+  just my corner of the internet to hold some thoughts
 lang: en-US
 timezone:  America/Los_Angeles
 repo: https://github.com/justsayknarf/justsayknarf.github.io # site repo [optional]
@@ -11,7 +11,7 @@ data-theme: dark # default theme "dark" | "light"
 
 author:
   name: frankkbyang
-  bio: just a minimalist, personal place on the internet to hold some thoughts
+  bio: just my corner of the internet to hold some thoughts
   userpicture:
   username: # general username
   github: # github username

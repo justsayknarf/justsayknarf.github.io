@@ -4,13 +4,8 @@ layout: default
 
 
 <section class="post">
-  <div class="flex-row-between">
-	  <a href="{{ '/' | relative_url }}">« back</a>
-    <button title="Change theme" id="theme-toggle" onclick="modeSwitcher()">
-      <div></div>
-    </button>
-  </div>
-  {% assign minute=content | number_of_words | divided_by: 265 | plus: 1 %}
+  <a class="post-back" href="{{ '/' | relative_url }}">« back</a>
+{% assign minute=content | number_of_words | divided_by: 265 | plus: 1 %}
   <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%b %-d, %Y" }} -
     {% if page.minute %} {{ page.minute }} {% else %} {{ minute }} {% endif %}min read</time>
   <h1 class="title">{{ page.title }}</h1>
